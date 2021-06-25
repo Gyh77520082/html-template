@@ -1,0 +1,206 @@
+dl,
+dt,
+dd {
+	display: block;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+#bg {
+	background-image: url(images/content/dotted.png);
+}
+
+.container {
+	width: 100%;
+	height: 300px;
+	margin: auto;
+}
+
+/*left*/
+.leftsidebar_box {
+	width: 182px;
+	height: auto !important;
+	overflow: visible !important;
+	height: auto !important;
+	background-color: #fff;
+}
+
+.line {
+	height: 2px;
+	width: 100%;
+	background-image: url(images/left/line_bg.png);
+	background-repeat: repeat-x;
+}
+
+.leftsidebar_box dt {
+	padding-left: 80px;
+	padding-right: 10px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	color: #000;
+	font-size: 14px;
+	position: relative;
+	line-height: 68px;
+	cursor: pointer;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+
+.leftsidebar_box dl {
+	margin-bottom: 3px;
+}
+
+.leftsidebar_box dd {
+	background-color: #fff;
+	padding-left: 20px;
+	border-bottom: 1px dashed #333;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.leftsidebar_box dd a {
+	color: #000;
+	line-height: 26px;
+}
+
+.leftsidebar_box dt img {
+	position: absolute;
+	right: 10px;
+	top: 30px;
+}
+
+.system_log dt {
+	background-image: url(images/left/app-1.png)
+}
+
+.custom dt {
+	background-image: url(images/left/app-2.png)
+}
+
+.channel dt {
+	background-image: url(images/left/app-3.png)
+}
+
+.app dt {
+	background-image: url(images/left/app-4.png)
+}
+
+.cloud dt {
+	background-image: url(images/left/app-5.png)
+}
+
+.syetem_management dt {
+	background-image: url(images/left/app-6.png)
+}
+
+.source dt {
+	background-image: url(images/left/app-7.png)
+}
+
+.statistics dt {
+	background-image: url(images/left/statistics.png)
+}
+
+.leftsidebar_box dl dd:last-child {
+	padding-bottom: 10px;
+}
+
+table.calbase_rakuten {
+	background-color: #FFFFFF;
+	border: 1px solid #CECECE;
+	width: 180px;
+	border-collapse: collapse;
+	padding: 0px 0px 10px 0px;
+}
+
+table.calbase_rakuten * {
+	font-size: 98%;
+	color: #000000;
+	border-collapse: collapse;
+	padding: 0px;
+	margin: 0px;
+}
+
+table.calbase_rakuten th {
+	text-align: center;
+}
+
+th.caltitle_rakuten {
+	font-size: 85%;
+	padding: 10px 0px 0px 0px;
+}
+
+table.calframe_rakuten {
+	border-collapse: collapse;
+	margin: 10px 10px 0px 10px;
+	table-layout: fixed;
+	width: 160px;
+}
+
+table.calframe_rakuten th {
+	text-align: center;
+	padding: 0px 0px 3px 0px;
+}
+
+table.calframe_rakuten td {
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+}
+
+tr.weektitle_rakuten td {
+	background-color: #CCCCCC;
+}
+
+td.event1day_rakuten {
+	background-color: #FF33CC !important;
+}
+
+font.event1day_rakuten {
+	color: #FF33CC;
+}
+
+td.event2day_rakuten {
+	background-color: #33CCFF !important;
+}
+
+font.event2day_rakuten {
+	color: #33CCFF;
+}
+
+td.event3day_rakuten {
+	background-color: #FFCC33 !important;
+}
+
+font.event3day_rakuten {
+	color: #FFCC33;
+}
+
+table.event_rakuten {
+	text-align: left;
+	word-break: break-all;
+	margin: 7px 10px 7px 10px;
+	border-collapse: collapse;
+	line-height: 120%;
+	table-layout: fixed;
+	width: 160px;
+}
+
+table.event_rakuten td {
+	padding: 0px 0px 0px 0px;
+}
+
+table.text_rakuten {
+	text-align: left;
+	word-break: break-all;
+	margin: 0px 10px 10px 10px;
+	border-collapse: collapse;
+	line-height: 120%;
+	table-layout: fixed;
+	width: 160px;
+}

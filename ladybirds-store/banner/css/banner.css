@@ -1,0 +1,38 @@
+.mainSlider.banner {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.mainSlider.banner ul {
+	padding: 0;
+	position: relative;
+}
+
+.mainSlider.banner img {
+	width: 100%;
+}
+
+.youhui {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.youhui a {
+	width: 23%;
+	float: left;
+	padding: 1%;
+	display: inline-block;
+}
+
+.youhui a img {
+	width: 100%;
+}
+.swiper-container2{
+	width:100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.swiper-slide{
+	 width: 100%; 
+	 display: inline-block;
+}

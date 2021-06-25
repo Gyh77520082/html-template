@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+html{height:100%; font-size:11px;}
+
+body{width:100%;min-height:100%;height:100%;margin:0;padding:0;text-align:center;background:#FFF;color:#000;font-family:"ヒラギノ角ゴ ProN W3", "ヒラギノ角ゴ Pro W3", "メイリオ", "游ゴシック", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
+
+*{margin:0;padding:0}
+
+img {border:0;} 
+a:hover img {opacity:0.7;filter: alpha(opacity=70);}
+
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+ul{list-style: none;list-style:none;margin:0px;padding:0px;-webkit-padding-start:0;}
+
+
+#pagebody{width:1002px;height:auto;margin:auto;}
+
+
+/*top*/
+
+.mainbody{width:782px; height:auto;float:left; margin:auto;}
+
+
+/*left*/
+
+#sidebar{width:200px; height:auto;float:left;margin:auto; background:#f7f6f5;}
+
+#side{float:left;width:200px;margin:0 auto;}
+.side_til{width:200px;float:left;font-size:14px; text-align:center;}
+#sidebox {width:198px;float:left;background:#ffffff;border:1px solid #E6E6E6;margin-bottom:36px;padding:8px 0px;}
+#searchform {position: relative;}
+#keywords{position:absolute;left:0;width: 150px;height:31px;border: 1px solid #CCC;margin-left:8px;background:#E7E7E7;}
+#searchBtn{position:absolute;top:0;left:150px;}
+
+.key {padding-top:40px;text-align:center;font-size:11px; margin-left:4px;}
+.key li {float:left;width:81px;list-style:none;text-align:center;line-height:30px; margin:auto 4px; margin-bottom:5px;border:1px solid #DDD;}
+.key li a {width:81px; color:#404040; text-decoration:none; display:block; }
+.key li a:hover {color:#404040; background:#f2f2f2; text-decoration:none;text-decoration:none;}
+
+.cate01{width:168px; text-align:left; margin-left:12px; margin-top:18px; padding-left:4px; font-size:12px; line-height:36px; font-weight:bold;color:#2e2e2e;font-size:12px; border-bottom:dashed #cccccc 1px; border-top:dashed #cccccc 1px;}
+.cate01 a{color:#404040; text-decoration:none; }
+.cate01 a:hover{color:#404040; text-decoration:underline;}
+
+.cate02{color:#666666; text-align:left;font-size:11px; padding-left:12px; line-height:36px;}
+.cate02 a{color:#666666; text-decoration:none;}
+.cate02 a:hover{color:#666666; text-decoration:underline;}
+
+.rankico{width:198px; float:left;color:#cc0000; text-align:center; margin:6px auto 4px auto; font-size:14px;}
+.rankico span{font-size:24px;font-weight:bold;}
+.rankico img{width:20px; height:20px;}
+.rankimg{width:158px; height:158px; float:left; margin-left:20px; margin-bottom:10px;}
+
+
+/*right*/
+
+.cate_titl{width:780px; float:left; margin-bottom:24px; color:#4d4d4d; line-height:72px; letter-spacing:1px; font-weight:bold; text-align:left; border-bottom:1px solid #4d4d4d;}
+.cate_titl01{font-size:30px; margin-left:20px; font-family:'Times New Roman', Times, serif}
+.cate_titl02{font-size:16px; margin-left:16px;}
+.bt_more{width:780px; float:left; margin-bottom:72px; text-align:center; font-size:13px; color:#000;}
+.bt_more p a{width:130px; float:right; margin-right:20px; display: block; line-height:38px; background:#F4EEE7; color:#000; border: 1px #4d4d4d solid; color:#4E4C63;}
+.bt_more p a:hover{width:130px; color:#fff; background:#4d4d4d; text-decoration:none;}
+
+.cate_a{width:780px; height:auto; float:left;}
+.cate_a ul{width:780px;list-style:none;float:left;color:#2e2e2e;}
+.cate_a li{width:175px;height:260px; float:left;list-style:none; margin:10px; text-align:center;}
+.cate_a li p{width:175px; height:30px; line-height:36px; overflow:hidden; font-size:11px; text-align:center;}
+.cate_a li span{width:175px;line-height:48px;text-align:center; font-size:12px; font-weight:bold;}
+.cate_a img{width:175px;height:175px;}
+
+
+
+/*footer*/
+#footer{width:100%; background:#efefef;}
+.title00{margin-top:20px; margin:10px auto;}
+.title_spg{width:1002px; height:auto; float:left; font-size:24px; color:#4d4d4d; text-align:center; line-height:62px; font-weight:600;}
+.footer_bg{background:#FFF; width:450px; float:left; padding:15px; margin:10px; text-align:left; border:1px solid #fff; border-radius:8px;box-shadow:2px 2px 5px #cccccc;}
+.footer_ttl{width:100%; float:left; font-size:14px; line-height:30px;letter-spacing:3px; margin-bottom:10px; font-weight:bold; border-bottom:dashed #666666 1px; color:#333333;}
+.footer_cot{width:100%; float:left; font-size:11px; line-height:24px;letter-spacing:2px; color:#333333;}

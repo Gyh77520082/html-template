@@ -1,0 +1,1068 @@
+
+#rakutenLimitedId_header * {
+  background: no-repeat fixed 0 0 transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none none !important;
+  list-style-type: none !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-weight: normal !important;
+  line-height: 1 !important;
+  font-size: 11px !important;
+  font-family: "Meiryo", "Hiragino Kaku Gothic ProN", "MS PGothic", sans-serif !important;
+  quotes: none !important;
+  counter-reset: none !important;
+  counter-increment: none !important;
+  content: normal !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  opacity: 1 !important;
+  box-sizing: content-box !important;
+  outline: none !important;
+  overflow: visible !important;
+  float: none !important;
+  table-layout: auto !important;
+  letter-spacing: normal !important;
+  z-index: auto !important;
+  color: #333333 !important;
+  cursor: auto !important;
+  caption-side: top !important;
+  clear: none !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  text-indent: 0 !important;
+  text-transform: none !important;
+  direction: ltr !important;
+  empty-cells: show !important;
+  unicode-bidi: normal !important;
+  vertical-align: baseline !important;
+  visibility: visible !important;
+  white-space: normal !important;
+  word-spacing: normal !important;
+  position: static !important;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  left: auto !important;
+  top: auto !important;
+  height: auto !important;
+  display: block !important;
+  /* for ie */
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+  text-autospace: none !important;
+  text-justify: auto !important;
+  text-underline-position: below !important;
+  word-break: normal !important;
+  word-wrap: normal !important;
+  writing-mode: lr-tb !important;
+  layout-grid: none !important;
+  ime-mode: auto !important;
+  line-break: normal !important;
+  ruby-align: auto !important;
+  ruby-overhang: auto !important;
+  ruby-position: inline !important;
+  background-position-x: left !important;
+  background-position-y: top !important;
+  behavior: none !important;
+  /* css3 */
+  background-clip: border-box !important;
+  background-origin: padding-box !important;
+  background-size: auto !important;
+  border-radius: 0 !important;
+  border-image: none 100% 1 0 stretch !important;
+  box-decoration-break: slice !important;
+  box-shadow: none !important;
+  transform: none !important;
+  transform-origin: 50% 50% !important;
+  transform-style: flat !important;
+  perspective: none !important;
+  box-orient: inline-axis !important;
+  box-direction: normal !important;
+  box-ordinal-group: 1 !important;
+  box-align: stretch !important;
+  box-flex: 0 !important;
+  box-flex-group: 1 !important;
+  box-pack: start !important;
+  box-lines: single !important;
+  columns: auto auto !important;
+  column-gap: normal !important;
+  column-rule: medium none #ffffff !important;
+  break-after: auto !important;
+  break-before: auto !important;
+  break-inside: auto !important;
+  column-span: 1 !important;
+  column-fill: balance !important;
+  word-break: normal !important;
+  text-wrap: normal !important;
+  word-wrap: normal !important;
+  text-justify: auto !important;
+  text-shadow: none !important;
+  ruby-position: before !important;
+  ruby-align: auto !important;
+  ruby-overhang: none !important;
+  ruby-span: none !important;
+  font-size-adjust: none !important;
+  font-stretch: normal !important;
+  -moz-box-sizing: content-box !important;
+}
+#rakutenLimitedId_header div,
+#rakutenLimitedId_header span,
+#rakutenLimitedId_header input,
+#rakutenLimitedId_header form,
+#rakutenLimitedId_header img,
+#rakutenLimitedId_header a {
+  overflow: visible;
+}
+
+body,
+#rakutenLimitedId_header img,
+#rakutenLimitedId_header div,
+#rakutenLimitedId_header p,
+#rakutenLimitedId_header ul,
+#rakutenLimitedId_header li,
+#rakutenLimitedId_header ol,
+#rakutenLimitedId_header dl,
+#rakutenLimitedId_header dt,
+#rakutenLimitedId_header dd {
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#rakutenLimitedId_header {
+  min-height: 55px !important;
+  _height: 60px !important;
+  width: 100% !important;
+  z-index: 2147483641 !important;
+  /* min-width: 950px !important; */
+}
+#rakutenLimitedId_header a,
+#rakutenLimitedId_header a img {
+  cursor: pointer !important;
+}
+div#rakutenLimitedId_header div.riShopHdrWrap {
+  display: block !important;
+  font-size: 78% !important;
+  left: 0 !important;
+  top: 0 !important;
+  /* min-width: 950px !important; */
+  overflow: visible !important;
+  position: fixed !important;
+  text-align: left !important;
+  width: 100%;
+  z-index: 2147483647 !important;
+  zoom: 1 !important;
+  line-height: 1 !important;
+  border-bottom: 1px solid #cccccc !important;
+}
+* html #rakutenLimitedId_header .riShopHdrWrap {
+  width: expression(document.body.clientWidth < 950? "950px": "100%"); /* IE */
+  position: absolute !important;
+}
+#rakutenLimitedId_header .riShopHdrWrap a {
+  color: #333333 !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+}
+#rakutenLimitedId_header .riShopHdrArea {
+  background: #ffffff !important;
+  color: #333333 !important;
+  height: 47px !important;
+  min-height: 47px !important;
+  *height: 57px !important;
+  margin: 0 !important;
+  padding: 4px 0 !important;
+  width: 100% !important;
+  z-index: 8888 !important;
+}
+#rakutenLimitedId_header .riShopHdrLogoArea {
+  position: absolute !important;
+  overflow: visible !important;
+  color: #333333 !important;
+  z-index: 9000 !important;
+}
+* html #rakutenLimitedId_header .riShopHdrLogoArea {
+  position: absolute !important;
+}
+#rakutenLimitedId_header .riShopHdrLogoArea a {
+  color: #333333 !important;
+  text-decoration: none !important;
+}
+#rakutenLimitedId_header .riShopHdrLogoArea a:hover {
+  color: #bf0000 !important;
+  text-decoration: underline !important;
+}
+#rakutenLimitedId_header .riShopHdrLogo {
+  display: block !important;
+  float: left !important;
+  margin: 12px !important;
+}
+#rakutenLimitedId_header .riShopHdrLogoTxtGnr {
+  float: left !important;
+  margin: 18px 12px 0 0 !important;
+}
+#rakutenLimitedId_header .riShopHdrLogoTxt {
+  padding-bottom: 5px !important;
+}
+#rakutenLimitedId_header .riShopHdrLogoGnr {
+  display: block !important;
+  position: relative !important;
+}
+#rakutenLimitedId_header .riShopHdrGenreWrap {
+  position: absolute !important;
+  display: none !important;
+  z-index: 1 !important;
+  border: solid 1px #999999 !important;
+  box-shadow: 3px 3px rgba(206, 206, 206, 0.65) !important;
+  -moz-box-shadow: 3px 3px rgba(206, 206, 206, 0.65) !important;
+  -webkit-box-shadow: 3px 3px rgba(206, 206, 206, 0.65) !important;
+  -o-box-shadow: 3px 3px rgba(206, 206, 206, 0.65) !important;
+  -ms-box-shadow: 3px 3px #cecece !important;
+  padding: 18px !important;
+  background: #ffffff !important;
+  line-height: 1.5 !important;
+  min-width: 396px !important;
+  _width: 396px !important;
+  zoom: 1 !important;
+  top: 27px !important;
+  _top: 37px !important;
+  left: -34px !important;
+  max-height: 415px !important;
+  margin-top: 10px !important;
+}
+#rakutenLimitedId_header .rGenreTreeTitleDiv {
+  clear: both !important;
+  padding-top: 10px !important;
+  color: #bf0000 !important;
+  font-weight: bold !important;
+  _margin-left: 15px !important; /* IE */
+  _padding-top: 0 !important; /* IE */
+}
+#rakutenLimitedId_header .rGenreTreeDiv {
+  padding: 5px 5px 0 0 !important;
+  _margin-left: 15px !important; /* IE */
+}
+#rakutenLimitedId_header .rGenreTreeDiv a {
+  display: inline !important;
+}
+#rakutenLimitedId_header .riShopHdrGenreWrap a {
+  color: #333333 !important;
+  text-decoration: none !important;
+}
+#rakutenLimitedId_header .riShopHdrGenreWrap a:hover {
+  color: #bf0000 !important;
+  text-decoration: underline !important;
+}
+#rakutenLimitedId_header .riShopHdrGenreList {
+  float: left !important;
+  display: inline !important;
+  margin-right: 9px !important;
+  list-style-type: none !important;
+  width: 185px !important;
+}
+#rakutenLimitedId_header .riShopHdrGenreList li a {
+  width: 100% !important;
+  line-height: 1.5em !important;
+}
+* html #rakutenLimitedId_header .riShopHdrGenreList {
+  width: 179px !important;
+}
+* html #rakutenLimitedId_header .riShopHdrGenreList a {
+  display: inline !important;
+  line-height: 1.5 !important;
+}
+#rakutenLimitedId_header .riShopHdrSearch {
+  right: 513px !important;
+  padding-top: 2px !important;
+}
+#rakutenLimitedId_header .riShopHdrInputArea {
+  position: absolute !important;
+  left: 162px !important;
+  right: 695px !important;
+  top: 10px !important;
+}
+#rakutenLimitedId_header.MacOS .riShopHdrInputArea {
+  right: 730px !important;
+  padding-right: 0 !important;
+}
+#rakutenLimitedId_header .searchInput {
+  width: 100% !important;
+  min-height: 32px !important;
+  _height: 32px !important;
+  border: none !important;
+  border-style: hidden !important;
+  border-top: 2px solid #bf0000 !important;
+  border-left: 2px solid #bf0000 !important;
+  border-bottom: 2px solid #bf0000 !important;
+  border-radius: 3px !important;
+  background-color: white !important;
+  cursor: text !important;
+  text-indent: 8px !important;
+  font-size: 12px !important;
+  line-height: 32px !important;
+}
+#rakutenLimitedId_header .searchInput {
+  color: #000 !important;
+}
+#rakutenLimitedId_header .searchInput::-webkit-input-placeholder {
+  color: #ababab !important;
+}
+#rakutenLimitedId_header .searchInput:-ms-input-placeholder {
+  color: #ababab !important;
+}
+#rakutenLimitedId_header .searchInput::-moz-placeholder {
+  color: #ababab !important;
+}
+#rakutenLimitedId_header .riShopTermArea {
+  color: #333333 !important;
+  min-width: 600px !important;
+  text-align: left !important;
+  position: absolute !important;
+  right: 4px !important;
+  top: 6px !important;
+  z-index: 9000 !important;
+  min-height: 30px !important; /* safari */
+  _height: 30 !important;
+}
+#rakutenLimitedId_header .riShopTermArea a {
+  color: #333333 !important;
+  text-decoration: none !important;
+  display: inline !important;
+  text-align: center !important;
+  line-height: 1.5em !important;
+}
+
+#rakutenLimitedId_header .riShopTermArea a:hover {
+  color: #bf0000 !important;
+  text-decoration: underline !important;
+}
+
+#rakutenLimitedId_header .riShopTermInr {
+  display: block !important;
+  position: relative !important;
+  _overflow: visible !important;
+  _clear: both !important;
+}
+#rakutenLimitedId_header .riShopTermBnr {
+  min-width: 90px !important;
+  min-height: 26px !important;
+  _width: 90px !important;
+  _height: 26px !important;
+  float: left !important;
+  padding-top: 1px !important;
+}
+#rakutenLimitedId_header .riShopTermBnr img {
+  height: 26 !important;
+}
+#rakutenLimitedId_header a img.riPostHeader {
+  display: inline !important;
+}
+#rakutenLimitedId_header a.riPostHeader {
+  display: inline !important;
+}
+#rakutenLimitedId_header .riShopTermUtil dd {
+  border-right: 1px solid #e1e1e1 !important;
+  padding: 0 9px !important;
+  float: left !important;
+  display: inline !important;
+  min-height: 26px !important;
+  _height: 26px !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .riShopTermInrTxt {
+  _width: 150 !important; /* IE */
+}
+#rakutenLimitedId_header .riShopTermUtil .riShopTermInrTxt p {
+  _line-height: 1.3 !important; /* IE */
+}
+#rakutenLimitedId_header .riShopTermUtil .riShopTermInrTxt .riShopTermInrTxtLn {
+  padding-bottom: 3px !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .riShopTermInrTxt a {
+  line-height: 1.3 !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .riShopTermInrRecWrap {
+  border-right: 0 !important;
+  width: 117px !important;
+}
+* html #rakutenLimitedId_header .riShopTermUtil .riShopTermInrRecWrap {
+  width: 135px !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .riShopTermInrRecWrap .riShopTermInrRecLn {
+  margin-top: -1px !important;
+  padding-bottom: 4px !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .riShopTermInrRecWrap .riShopTermInrRecLn a {
+  line-height: 1.3 !important;
+}
+#rakutenLimitedId_header .riShopTermUtil dd.riShopTermBskt {
+  border-left: 1px solid #e1e1e1 !important;
+  padding-left: 8px !important;
+  _width: 64 !important; /* IE */
+}
+#rakutenLimitedId_header .riShopTermInrRec {
+  text-align: center !important;
+  display: block !important;
+}
+* html #rakutenLimitedId_header .riShopTermInrRec .riShopTermInrRecLink {
+  width: 120px;
+}
+* html #rakutenLimitedId_header .riShopTermInrRec .riShopTermInrRecLink .riShopTermInrRecTri {
+  _line-height: 1.3 !important; /* IE */
+}
+#rakutenLimitedId_header .riShopTermUtil .basket {
+  padding: 8px 0 3px 32px !important;
+  min-height: 17px !important;
+  font-weight: bold !important;
+  float: left !important;
+  display: inline !important;
+  cursor: pointer !important;
+  padding: 8px 0 4px 29px !important;
+  min-height: 17px !important;
+  font-weight: bold !important;
+  float: left !important;
+  display: inline !important;
+  background: url(https://r.r10s.jp/com/img/home/201210/beta05/icon_cart.gif)
+    no-repeat 0 4px !important;
+  color: #bf0000 !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .riShopTermUtilInr {
+  border: 0 !important;
+  padding-right: 0 !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .riShopTermUtilInr a {
+  line-height: 1.1 !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .util1 {
+  border: 0 !important;
+  float: left !important;
+  padding: 0 9px 0 0 !important;
+  min-width: 60 !important;
+  width: 60 !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .util2 {
+  border: 0 !important;
+  float: left !important;
+  padding: 0 !important;
+  min-width: 55 !important;
+  width: 55 !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .util1 li,
+#rakutenLimitedId_header .riShopTermUtil .util2 li {
+  list-style-type: none !important;
+  border: 0 !important;
+  display: block !important;
+  margin: 0 !important;
+  _height: 15 !important; /* IE */
+  width: 65 !important; /* IE */
+  padding: 0 0 4px 0 !important;
+  _padding: 0 0 0 0 !important;
+}
+#rakutenLimitedId_header .riShopTermUtil .util1 li a,
+#rakutenLimitedId_header .riShopTermUtil .util2 li a {
+  width: 100% !important;
+}
+#rakutenLimitedId_header #shopHdrRecoArea {
+  position: absolute !important;
+  top: 40px !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  background: #ffffff !important;
+}
+* html #rakutenLimitedId_header #shopHdrRecoArea {
+  left: 0 !important;
+  right: 0 !important;
+}
+#rakutenLimitedId_header #shophdrrecoarea #shophdrreco {
+  width: 100% !important;
+  border-right: 0 !important;
+  border-bottom: 1px solid #bf0000 !important;
+  border-left: 0 !important;
+  margin-top: 0 !important;
+}
+#rakutenLimitedId_header .riShopHdrLogoGnrDrop {
+  padding: 0 !important;
+  z-index: 3 !important;
+  position: relative !important;
+  padding-bottom: 18px !important;
+}
+#rakutenLimitedId_header .riShopHdrLogoGnrDrop * {
+  display: inline !important;
+}
+#rakutenLimitedId_header .riShopTermInrRec * {
+  display: inline !important;
+}
+#rakutenHeaderIESpace {
+  _height: 40 !important;
+}
+
+/*-- MacOS ---------------------------------------------------------*/
+
+#rakutenLimitedId_header.MacOS * {
+  font-size: 9pt !important;
+}
+#rakutenLimitedId_header.MacOS .riShopTermUtil .util1,
+#rakutenLimitedId_header.MacOS .riShopTermUtil .util2 {
+  width: 65 !important;
+}
+#rakutenLimitedId_header.MacOS .riShopTermUtil .util1 li,
+#rakutenLimitedId_header.MacOS .riShopTermUtil .util2 li {
+  width: 65 !important;
+}
+#rakutenLimitedId_header.MacOS .riShopTermUtil .riShopTermInrRecWrap {
+  width: 124 !important;
+}
+
+/*-- marathon ---------------------------------------------------------*/
+#marathon_parts {
+  background-color: #eeeeee;
+  font-weight: bold;
+  font-size: 10pt;
+  line-height: 2 !important;
+  padding: 0 10px 0 5px;
+  _padding: 0 0 0 5px;
+  overflow: hidden;
+  min-width: 980px;
+  _width: expression(document.body.clientWidth < 950? "950px": "100%"); /* IE */
+  position: relative;
+  z-index: 2147483600;
+}
+#marathon_parts #marathonWord {
+  width: 620px;
+  color: #000000;
+  font-family: "MS PGothic", sans-serif;
+  background-color: #eeeeee;
+  font-weight: bold;
+  font-size: 10pt;
+  letter-spacing: 0;
+  text-align: left;
+}
+#marathon_parts #marathonWord a:hover {
+  color: #bf0000;
+  text-decoration: underline;
+}
+#marathon_parts #marathonWord a {
+  color: #000000;
+  font-family: "MS PGothic", sans-serif;
+  background-color: #eeeeee;
+  font-weight: bold;
+  font-size: 10pt;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+}
+#marathon_parts #itemGenreIcon {
+  _margin-top: 5px;
+  _width: 230px;
+  color: #000000;
+  font-family: "MS PGothic", sans-serif;
+  background-color: #eeeeee;
+  font-weight: bold;
+  font-size: 10pt;
+  letter-spacing: 0;
+  text-align: left;
+}
+#marathon_parts #genreImage {
+  vertical-align: -4px;
+}
+
+#rakutenLimitedId_header .ris-hd-sprite {
+  background: url("https://r.r10s.jp/com/img/home/itempage/haeder_sprite.png?v=1511191000")
+    top left no-repeat !important;
+  text-indent: 100% !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  display: block !important;
+}
+#rakutenLimitedId_header .ris-rakuten-logo {
+  width: 106px !important;
+  height: 32px !important;
+  background-position: -10px -10px !important;
+  text-indent: 100% !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  display: block !important;
+  background: url("https://r.r10s.jp/com/img/logo/rakuten_group_red.svg") top
+    left no-repeat !important;
+  background-size: 106px 32px !important;
+}
+
+#rakutenLimitedId_header .ris-genre-list-icon {
+  width: 20px !important;
+  height: 19px !important;
+  background-position: -10px -277px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#rakutenLimitedId_header .searchBtn {
+  width: 23px !important;
+  height: 24px !important;
+}
+#rakutenLimitedId_header .ris-header-function .ris-hd-sprite {
+  margin: 2px auto 5px !important;
+}
+#rakutenLimitedId_header .ris-header-function .ris-mybasket {
+  width: 22px !important;
+  height: 22px !important;
+  _height: 24px !important;
+  background-position: -10px -184px !important;
+  _background-position: -10px -182px !important;
+  _margin: 4px auto 4px !important;
+  margin: 4px auto !important;
+}
+#rakutenLimitedId_header .ris-header-function .ris-mycoupon {
+  width: 24px !important;
+  height: 16px !important;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  background-position: -10px -306px !important;
+}
+#rakutenLimitedId_header .ris-header-function .ris-browse {
+  width: 22px !important;
+  height: 21px !important;
+  background-position: -10px -216px !important;
+}
+#rakutenLimitedId_header .ris-header-function .ris-bookmark {
+  width: 22px !important;
+  height: 22px !important;
+  background-position: -10px -120px !important;
+}
+#rakutenLimitedId_header .ris-header-function .ris-order {
+  width: 21px !important;
+  height: 22px !important;
+  background-position: -10px -88px !important;
+}
+
+#rakutenLimitedId_header .riShopHdrLogoGnr .ris-top-tail {
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-bottom: 9px solid #686868 !important;
+  position: absolute !important;
+  top: -9px !important;
+  left: 33px !important;
+  z-index: 1 !important;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#rakutenLimitedId_header .riShopHdrLogoGnr .ris-top-tail-fill {
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-bottom: 8px solid #fff !important;
+  position: absolute !important;
+  right: -8px !important;
+  top: 1px !important;
+  _top: -18px !important;
+}
+#rakutenLimitedId_header .ris-search-btn {
+  border: none !important;
+  width: 45px !important;
+  height: 40px !important;
+  _height: 36px !important;
+  cursor: pointer !important;
+  background: #bf0000
+    url(https://r.r10s.jp/com/img/home/itempage/haeder_sprite.png?v=1511191000)
+    no-repeat 2px -239px !important;
+  position: absolute !important;
+  right: -5px !important;
+  _right: -3px !important;
+  top: 0 !important;
+  _top: 1px !important;
+  display: block !important;
+  border-radius: 0 3px 3px 0 !important;
+  box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+}
+
+.pageError #rakutenLimitedId_header .ris-search-btn {
+  right: -38px !important;
+  _right: -69px !important; /* for IE */
+}
+
+#rakutenLimitedId_header .searchBtn {
+  position: absolute !important;
+  display: block !important;
+  height: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  outline: 0 !important;
+  color: #fff !important;
+  background: 0 0 !important;
+  border: none !important;
+  line-height: 1px !important;
+  text-indent: -1000px !important;
+}
+#rakutenLimitedId_header input[type="submit"] {
+  -webkit-appearance: button !important;
+  cursor: pointer !important;
+}
+#rakutenLimitedId_header .ris-header-function {
+  width: auto !important;
+  position: relative !important;
+  display: inline-block !important;
+  float: left !important;
+}
+#rakutenLimitedId_header .riShopTermInr > * {
+  font-size: 11px !important;
+}
+#rakutenLimitedId_header .ris-header-function .ris-header-list {
+  float: left !important;
+  text-align: center !important;
+  font-size: 11px !important;
+  display: block;
+  margin: 0 4px !important;
+  position: relative !important;
+}
+#rakutenLimitedId_header .ris-header-function .ris-header-link {
+  display: block !important;
+  _display: initial !important;
+}
+#rakutenLimitedId_header .ris-header-function a:hover .ris-hd-sprite {
+  opacity: 0.65 !important;
+}
+#rakutenLimitedId_header .ris-header-function a:hover {
+  opacity: 0.65 !important;
+  text-decoration: none !important;
+  color: #333333 !important;
+}
+#rakutenLimitedId_header .riShopTermInrRecWrap {
+  float: left !important;
+  padding-right: 8px !important;
+  display: none !important;
+}
+#rakutenLimitedId_header .riShopTermInrRecLn {
+  padding-top: 5px !important;
+  padding-bottom: 4px !important;
+}
+#rakutenLimitedId_header .riShopTermInrRecTri:hover {
+  cursor: default !important;
+}
+#rakutenLimitedId_extshopParts {
+  top: 55px !important;
+}
+#rakutenLimitedId_header .ris-ar-tri {
+  position: relative !important;
+  _position: static !important;
+  padding-right: 15px !important;
+  zoom: 1 !important;
+  overflow: hidden !important;
+}
+#rakutenLimitedId_header .ris-ar-btm {
+  top: 5px !important;
+  _top: 3px !important;
+  right: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 6px solid transparent !important;
+  border-right: 6px solid transparent !important;
+  border-top: 6px solid #666666 !important;
+  position: absolute !important;
+}
+#rakutenLimitedId_header .ris-ar-btm span {
+  display: block !important;
+  clear: both !important;
+  height: 0 !important;
+  content: " " !important;
+  font-size: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 5px solid transparent !important;
+  border-right: 5px solid transparent !important;
+  border-top: 5px solid #ffffff !important;
+  position: absolute !important;
+  right: -5px !important;
+  top: -6px !important;
+}
+#rakutenLimitedId_header a:hover {
+  color: #bf0000 !important;
+  text-decoration: underline !important;
+}
+#rakutenLimitedId_header .basket {
+  padding: 3px 5px 2px 5px !important;
+  border: solid 2px #ffffff !important;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  background: #bf0000 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 33px !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+  font-size: 10px !important;
+  text-align: center !important;
+  font-family: "MS PGothic", "Osaka", Arial, sans-serif !important;
+  line-height: 1.1em !important;
+  z-index: 1 !important;
+}
+#rakutenLimitedId_header .ris-ar-right {
+  display: block !important;
+  clear: both !important;
+  height: 0 !important;
+  content: " " !important;
+  font-size: 0 !important;
+  width: 0 !important;
+  border-top: 4px solid transparent !important;
+  border-bottom: 4px solid transparent !important;
+  border-left: 4px solid #7d7d7d !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 4px !important;
+  text-align: right !important;
+  _display: none !important;
+}
+#rakutenLimitedId_header .ris-hover-helper {
+  position: absolute !important;
+  width: 135px !important;
+  height: 20px !important;
+  top: -20px !important;
+  right: -20 !important;
+}
+#rakutenLimitedId_header .ris-btn-close {
+  background: url(https://r.r10s.jp/com/img/home/itempage/sp/btn_close.png)
+    no-repeat 0 0 !important;
+  background-size: 16.5px 16.5px !important;
+  display: block !important;
+  width: 16.5px !important;
+  height: 16.5px !important;
+  position: absolute !important;
+  right: 6px !important;
+  top: 6px !important;
+  cursor: pointer !important;
+}
+#rakutenLimitedId_header .ris-header-function .ris-notification {
+  width: 22px !important;
+  height: 22px !important;
+  _height: 24px !important;
+  background-position: -10px -152px !important;
+  margin: 4px auto 2px !important;
+  _margin: 5px 0 0 10px !important;
+}
+
+.global-banner-wrapper {
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  padding-bottom: 0 !important;
+}
+
+#globalBannerWrapper,
+.global-banner-contents,
+.global-banner-settings-api {
+  padding-bottom: 0 !important;
+}
+
+
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+a:hover img {
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+}
+
+#conte {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.top {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	align-items: center;
+	font-size: 12px;
+	/*border-bottom: 2px solid #000000;*/
+}
+
+.right {
+	display: flex;
+	margin: auto;
+	white-space: nowrap;
+}
+
+.tellist {
+	width: 100%;
+}
+
+.list {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1 1 auto;
+	width: 100%;
+	align-items: center;
+	padding-left: 0;
+}
+
+.list li {
+	/*white-space: nowrap;*/
+	border-right: 1px solid #514f4e;
+	
+	flex-grow: 1;
+}
+
+.list li:last-child {
+	border: none;
+}
+
+.list li a {
+	display: block;
+	text-decoration: none;
+	color: #000000;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+h1 {
+	margin: 0 auto;
+}
+
+h1 a {
+	vertical-align: bottom;
+}
+
+.wrap {
+	width: 100%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.wrap a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+ul {
+	list-style: none;
+	position: relative;
+	text-align: center;
+}
+
+
+nav {
+	position: relative;
+	background: #2B2B2B;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+/* prime */
+ul.primary {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin-top: 0;
+}
+
+ul.primary li {
+	width: 14%;
+}
+
+ul.primary li a {
+	display: block;
+	padding: 14px 0;
+	border-right: 1px solid #3D3D3D;
+}
+
+ul.primary li:last-child a {
+	border-right: none;
+}
+
+ul.primary li a:hover {
+	color: #000;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+	color: #039;
+	text-decoration: none;
+}
+
+/* subs */
+ul.sub {
+	position: absolute;
+	z-index: 200;
+	width: 14%;
+	display: none;
+	padding: 0;
+	background: #2B2B2B;
+}
+
+ul.sub li {
+	margin: 0;
+	width: auto;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+}
+
+ul.sub li a {
+	border-bottom: 1px dotted #ccc;
+	border-right: none;
+	color: #000;
+}
+
+ul.sub li:last-child a {
+	border-bottom: none;
+}
+
+ul.sub li a:hover {
+	color: #000;
+	background: #eeeeee;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+	color: #039;
+	text-decoration: none;
+}
+
+/* sub display*/
+ul.primary li:hover ul {
+	display: block;
+	background: #2B2B2B;
+}
+
+/* keeps the tab background white */
+ul.primary li:hover a {
+	background: #fff;
+	color: #666;
+	text-shadow: none;
+}
+
+ul.primary li:hover>a {
+	color: #000;
+}
+	

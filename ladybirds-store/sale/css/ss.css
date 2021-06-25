@@ -1,0 +1,263 @@
+
+#page {
+    padding-bottom: 2%
+}
+.ss iframe {
+    background-color: #FFF;
+    padding: 2%;
+}
+/* #ct-cdtimer{
+    background-color: #bc2a3b;
+} */
+#ct-cdtimer .timer {
+    max-width: 1200px;
+    height: 120px;
+    margin: 0 auto 10px;
+    background: url(../image/wintersale/countdown-pc.jpg) no-repeat center;
+    position:  relative;
+}
+    @media screen and (max-width: 414px){
+        #ct-cdtimer .timer{
+            background: url(../image/wintersale/countdown-sp.jpg) no-repeat center;
+            background-size:contain;
+            height: 55px;
+        }
+    }
+
+#ct-cdtimer .timer-text {
+    position: absolute;
+    bottom: 14%;
+    right: 10%;
+    font-size: 24px;
+    text-align: left;
+    letter-spacing: 10px;
+    width: 45%;
+    text-align: center;
+    top: 76px;
+    z-index: 5;
+}
+    @media screen and (max-width: 414px){
+        #ct-cdtimer .timer-text{
+            right: 3%;
+            font-size: 13px;
+            letter-spacing: 4px;
+            width: 52%;
+            top: 28px;
+            text-align: left;
+        }
+    }
+     @media screen and (max-width: 320px){
+        #ct-cdtimer .timer-text{
+            width: 54%;
+        }
+    }
+#ct-bannertop.back {
+    background-color: #F7C600;
+}
+/*#ct-bannertop.back2 {
+    background-color: #C4101C;
+}*/
+
+.coupon1000 {
+    max-width: 945px;
+    margin: 3% auto;
+}
+#ct-han {
+    max-width: 945px;
+    margin: 3% auto 5%;
+    border-radius: 20px;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+    @media screen and (max-width: 414px){
+        #ct-han {
+            width: 96%;
+        }
+    }
+#ct-han .han_coupon a {
+    display: block;
+    position: absolute;
+    height: 50%;
+    top: 30%;
+}
+#ct-han .han_coupon1 {
+    width: 35%;
+    left: 0;
+}
+#ct-han .han_coupon2 {
+    width: 30%;
+    left: 35%;
+}
+#ct-han .han_coupon3 {
+    width: 35%;
+    left: 65%;
+}
+#ct-han .han_point {
+    width: 100%;
+    margin-top: 2%;
+}
+#ct-han .han_point div {
+    width: 48%;
+    margin: 0 1% 1%;
+    font-size: 1.2em;
+}
+#ct-han .han_point div img {
+    width: 100%;
+    margin-top: 1%;
+}
+#ct-han .han_point span {
+    color: #8E000B;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+    @media screen and (max-width: 414px){
+        #ct-han .han_point div {
+            width: 90%;
+            font-size: .8em;
+            margin-bottom: 5%;
+        }
+        #ct-han .han_point span {
+            font-size: .9em;
+        }
+    }
+
+#ct-mokuji {
+    max-width: 945px;
+    margin: 3% auto;
+}
+#ct-mokuji .mokuji {
+    text-align: center;
+}
+#ct-mokuji .mokuji div {
+    width: 20%;
+    margin: 0 .5% 1%
+}
+#ct-mokuji .mokuji.zen div {
+    width: 48%;
+}
+#ct-mokuji .mokuji div img {
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transform: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all  0.1s ease;
+}
+#ct-mokuji .mokuji div img:hover {
+    -webkit-transform: translate(1px,1px);
+    -moz-transform: translate(1px,1px);
+    -ms-transform: translate(1px,1px);
+    -o-transform: translate(1px,1px);
+    transform: translate(1px,1px);
+}
+
+/*#ct-medama_zen {
+    background-color: #a80000;
+    padding-bottom: 3%;
+}*/
+#head-wrapper {
+    background-color: #ffffff;
+    padding-bottom: 1%;
+}
+#ct-pt20 {
+    background-color: #f1a9a9;
+    padding-bottom: 1%;
+}
+#ct-medama {
+    background-color: #a90020;
+}
+#ct-medama2 {
+    background-color: #d8183d;
+    padding-bottom: 1%;
+}
+#ct-yokoku {
+    background-color: #fff6d4;
+}
+#ct-outer {
+    background-color: #b15151;
+    padding-bottom: 1%;
+}
+#ct-knit {
+    background-color: #ffe8e9;
+    padding-bottom: 1%;
+}
+#ct-ranking {
+    background-color: #b82653;
+    padding-bottom: 1%;
+}
+#ct-time {
+    background-color: #ffbe15;
+}
+#ct-time2 {
+    background-color: #ffbe15;
+    padding-bottom: 1%;
+}
+#ct-coorde {
+    background-color: #01877e;
+    padding-bottom: 1%;
+}
+#ct-newarr {
+    background-color: #979d00;
+    color: #FFF;
+    padding-bottom: 1%;
+}
+#ct-sale {
+    background-color: #f35151;
+    padding-bottom: 3%;
+}
+
+#ct-cate{
+    padding-top: 5%;
+}
+
+
+.ss .title {
+    max-width: 945px;
+    margin: 0 auto;
+}
+    @media screen and (max-width: 414px){
+        .ss .title {
+            width: 90%;
+        }
+    }
+.banner-items {
+    text-align: center;
+    max-width: 945px;
+}
+    @media screen and (max-width: 414px){
+        .banner-items {
+            width: 96%;
+        }
+    }
+.banner-items .item-big {
+    width: 98%;
+    margin-bottom: 2%;
+}
+.banner-items .item-small {
+    width: 48%;
+    margin: 0 1% 2%;
+}
+
+
+
+#ct-newarr p {
+    font-size: 1.25rem;
+    letter-spacing: .04rem;
+}
+#ct-newarr p span {
+    font-size: 1.4rem;
+    color: #8E000B;
+    font-weight: bold;
+}
+    @media screen and (max-width: 414px){
+        #ct-newarr p {
+            font-size: .8rem;
+            letter-spacing: -0.1em;
+        }
+        #ct-newarr p span {
+            font-size: .8rem;
+        }
+    }
+
+#ct-cate {
+    max-width: 945px;
+}

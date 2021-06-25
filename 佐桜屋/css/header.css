@@ -1,0 +1,446 @@
+ul li {
+	list-style-type: none;
+}
+
+
+.index_header {
+	width: 70%;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (max-width:968px) {
+	.index_header {
+		width: 100%;
+
+	}
+}
+
+.text_box {
+	font-size: x-small;
+}
+
+.Left {
+	float: left;
+	width: 100%;
+}
+
+.nav li {
+	display: inline;
+	font-size: 11px;
+}
+
+.nav li a {
+	display: inline;
+}
+
+.ban_info {
+	font-size: 11px;
+	margin: 0;
+}
+
+.colorf00 {
+	color: #F00;
+}
+
+.trend li {
+	float: left;
+	margin: 0px 10px 0px 0px;
+}
+
+.trend li a {
+	display: block;
+	border: 1px solid #ccc;
+	line-height: 30px;
+	font-size: 13px;
+	background: white;
+	color: #26212c;
+	text-decoration: none;
+	padding: 0px 5px;
+	transition: border 300ms ease;
+}
+
+.p-header_banner-item--mulch li {
+	float: left;
+	width: 25%;
+	margin-top: 15px;
+
+}
+
+#flex {
+	margin: 15px 0;
+}
+
+#flex ul {
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+}
+
+#flex ul li {
+	list-style: none;
+	text-align: center;
+	flex: 1;
+	justify-content: space-between;
+}
+
+.index_edition {
+	width: 100%;
+	float: left;
+	margin-top: 28px;
+
+}
+
+.index_edition img {
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 25px;
+	min-height: 314px;
+}
+
+.index_edition a:nth-child(3n) img {
+	margin-right: 0px;
+}
+
+.NewStore {
+	width: 70%;
+	margin: auto;
+	padding-top: 17px;
+	height: auto;
+}
+
+@media (max-width:968px) {
+	.NewStore {
+		width: 100%;
+	}
+}
+
+
+.header_logo_hight {
+	padding-top: 17px;
+	height: 120px;
+}
+
+.header_logo_hight img {
+	opacity: 1;
+	width: 334px;
+	height: 84;
+}
+
+.StoreInfo {
+	width: 50%;
+	float: right;
+	display: inline;
+	text-align: right;
+}
+
+.index_seach {
+	width: 100%;
+	margin: auto;
+	display: block;
+	height: auto;
+}
+
+.index_seach_left {
+	margin: 20px auto 20px auto;
+	float: left;
+}
+
+.search_form {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+}
+
+
+.seach_input {
+	width: 168px;
+	height: 30px;
+	background: #cccccc;
+	border: none;
+	margin-right: 0px;
+}
+
+.seach_lable {
+	position: absolute;
+	left: 168px;
+	top: -1px;
+}
+
+.seach_submit {
+	position: absolute;
+	top: 0;
+	top: 1px;
+	left: 168px;
+	display: none;
+}
+
+.index_seach_center {
+	display: block;
+	margin: 10px 0px auto 20px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	float: left;
+}
+
+.index_seach_right {
+	display: block;
+	margin: 20px 0px auto 0px;
+	float: right;
+}
+
+.index_seach_cright {
+	display: block;
+	margin: 25px 0px auto 10px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	text-decoration: underline;
+}
+
+.index_banner {
+	width: 100%;
+	height: 580px;
+	margin: auto;
+}
+
+.header_center {
+	width: 100%;
+	margin: 15px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header_center_banner {
+	float: left;
+	width: 60%;
+}
+
+.header_center_banner_i {
+	width: 100%;
+	height: 430px;
+}
+
+.header_discount_all {
+	width: 40%;
+
+}
+
+.header_discount {
+	margin-top: 1%;
+}
+
+.timesale {
+	width: 100%;
+	height: 20px;
+	float: left;
+	border-bottom: solid #e5e5e5 1px;
+	margin: auto auto 30px auto;
+	text-align: center;
+}
+
+.timesal_0 {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	line-height: 48px;
+	font-size: 18px;
+	color: #26212c;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media (max-width:968px) {
+	.header_logo_hight img {
+		width: 100%;
+		margin: 0;
+	}
+
+	.index_seach {
+		display: none;
+	}
+
+	.StoreInfo {
+		width: 100%;
+		text-align: center;
+	}
+
+	.font_padding {
+		margin: 0;
+		padding: 0 !important;
+	}
+
+	.index_banner {
+		height: 240px;
+	}
+
+	.header_center_banner_i {
+		height: 150px;
+	}
+
+}
+
+.navigation_ul {
+	display: flex;
+	margin: 0;
+}
+
+.navigation_font {
+	margin-top: 45px;
+}
+
+.navigation_li {
+	width: 10%;
+	text-align: center;
+}
+
+.navigation_li a {
+	text-decoration: blink !important;
+}
+
+.navigation_font span {
+	display: block;
+	width: 20%;
+	margin: auto;
+	font-family: "franklin gothic demi";
+	letter-spacing: 1px;
+	line-height: 1.2;
+	font-weight: bold;
+	border-right: 1px solid #730000;
+	color: #730000;
+}
+
+.popularity {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.title_left {
+	float: left;
+}
+
+.title_right {
+	float: right;
+}
+
+.popularity_titile span {
+	font-size: 20px;
+	line-height: 100px;
+}
+
+.popularity_bigimg {
+	width: 100%;
+}
+
+.popularity_list {
+	width: 25%;
+}
+
+.popularity_message {
+	text-align: center;
+}
+
+.popularity_message b {
+	display: block;
+	width: 100%;
+}
+
+/* .popularity_message span{
+					display: block;
+					width: 96%;
+				} */
+.navigation_img {
+	width: 20%;
+}
+
+.header_run {
+	width: 70%;
+	margin: auto;
+}
+
+.discount {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.discount_titile {
+	width: 100%;
+}
+
+.discount_img {
+	width: 33%;
+}
+
+.classify {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.classify_titile {
+	width: 100%;
+}
+
+.classify_img {
+	width: 25%;
+}
+
+.discount_titile img {
+	float: left;
+	width: 200px;
+}
+
+.classify_titile span {
+	font-size: 20px;
+	line-height: 100px;
+}
+
+@media (max-width:968px) {
+	.navigation_font {
+		margin-top: 0;
+	}
+
+	.navigation_font span {
+		border: 0;
+	}
+
+	.navigation_li {
+		margin-left: -5px;
+	}
+
+	.header_run {
+		width: 100%;
+	}
+
+	li.swiper-slide {
+		width: 50%;
+	}
+
+	.discount {
+		width: 100%;
+	}
+
+	.classify {
+		width: 100%;
+	}
+
+	.classify_titile span {
+		font-size: 12px;
+		line-height: 50px;
+	}
+
+	.discount_titile img {
+		width: 25%;
+	}
+
+}

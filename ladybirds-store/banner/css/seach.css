@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	padding: 10px !important;
+}
+
+#search_container {
+	width: 100%;
+}
+
+form {
+	margin: auto !important;
+}
+
+form>div {
+	background-color: white;
+	font-size: 25px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	border: 2px solid #cccccc;
+	overflow: hidden;
+	border-radius: 1px;
+}
+
+form>div i {
+	font-size: 50px;
+	margin: 0 6px 0 10px;
+}
+
+form>div .clearButton {
+	color: #4975f7;
+	font-size: 45px;
+	padding: 6px;
+	margin: 0 6px 0 2px;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+form>div .clearButton:hover {
+	color: #1850f5;
+}
+
+@media all and (-ms-high-contrast: none) {
+	form>div .clearButton {
+		display: none;
+	}
+}
+
+form>div input[type="text"] {
+	-ms-flex-positive: 999999;
+	flex-grow: 999999;
+	-ms-flex-negative: 1;
+	flex-shrink: 1;
+	-ms-flex-preferred-size: 90px;
+	flex-basis: 90px;
+	width: 60%;
+	height: 60px;
+	padding-left: 3px;
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+form>div input[type="submit"] {
+	color: white;
+	background-color: red;
+	letter-spacing: 1.5px;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-ms-flex-negative: 9999;
+	flex-shrink: 9999;
+	-ms-flex-preferred-size: 80px;
+	flex-basis: 80px;
+	height: 60px;
+	padding: 8px 10px 6px;
+	border: none;
+	cursor: pointer;
+
+}
+
+form>div input[type="submit"]:hover {
+	background-color: #1850f5;
+}

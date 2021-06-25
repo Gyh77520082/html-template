@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
+	</head>
+	<body>
+		<style>
+			
+			.swiper-slide-active{
+			 width:70%!important;
+			}
+			.swiper-slide img{
+				height:500px!important;
+			}
+			.swiper-slide-active img{
+				width: 100%;
+			}
+			.swiper-slide-prev{
+				 width: 15%!important;
+				 overflow: hidden;
+				/* margin-left: 30%; */	
+			}
+			.swiper-slide-next{
+				width: 15%!important;
+				/* margin-left: 30%; */
+				 overflow: hidden;
+			}
+		</style>
+		<div class="swiper-container " id="swiper-container_banner" >
+			<div class="swiper-wrapper">
+				<li class="swiper-slide">
+					<a href="https://search.rakuten.co.jp/search/mall/%E3%83%9E%E3%82%B9%E3%82%AF/?sid=395191" target="_blank" >
+						<img src="images/banner01.jpg" >
+					</a>
+				</li>
+				<li class="swiper-slide">
+					<a href="https://item.rakuten.co.jp/sasakuraya/c/0000000107/" target="_blank" >
+						<img src="images/banner02.jpg" >
+					</a>
+				</li>
+				<li class="swiper-slide" >
+					<a href="https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC/?sid=395191" target="_blank" >
+						<img src="images/banner03.jpg" >
+					</a>
+				</li>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+		
+		<script src="js/swiper-bundle.min.js"></script>
+		<script>
+			window.onload = function(){
+				var swiper = new Swiper('#swiper-container_banner', {
+					autoplay:true, //自动切换
+					direction:"horizontal", //横向切换
+					slidesPerView: 3,//一页3个
+					loop: true, //循环
+					speed: 300, //切换速度
+					centeredSlides : true, //active slide会居中，而不是默认状态下的居左。
+					centeredSlidesBounds: true,
+					// spaceBetween: 20,//sider的间隔
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					}, //左右箭头
+					pagination: {
+					  el: '.swiper-pagination',
+					  clickable :true,
+					},	//分页器
+				});
+			}
+		</script>
+	</body>
+</html>

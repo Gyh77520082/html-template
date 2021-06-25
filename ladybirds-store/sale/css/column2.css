@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+
+input {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+}
+
+/*layout*******************************************/
+#wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#column2 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1120px;
+    display: block;                                                                                                  
+}
+#left-pc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    position: relative;
+}
+#left-pc .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#left-pc .right {
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+#page {
+    position: absolute;
+    top: 0;
+    left: 340px;
+    width: 780px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+#bottom {
+    margin-top: 5%;
+}
+#copyright {
+    padding: 3% 0;
+    opacity: .4;
+    letter-spacing: 1px;
+    font-size: 10px!important;
+}
+
+/* 1column */
+#column #left-pc {
+    display: none;
+}
+#column #page {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+}
+#column, #left-pc iframe {
+        height: auto;
+}
+
+/* sp */
+    @media screen and (max-width: 414px){
+    #header, #left-pc {
+        display: none;
+    }
+    #page {
+        position: static;
+        width: 100%!important;
+    }
+    #column2 {
+        height: auto;
+    }
+    }
+
+
+
+/*bottom*******************************************/
+/*  */
+#bottom .waku {
+    margin-bottom: 50px;
+}
+
+/* title */
+.bar {
+    background: url(../../a_main/image/bar-back.png) repeat-x;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.bar-pickitem img {
+    max-width: 400px!important;
+}
+.bar-acce img {
+    max-width: 566px!important;
+}
+.bar-pickim img {
+    max-width: 400px!important;
+}
+.bar-pickcg img {
+    max-width: 473px!important;
+}
+.bar-rank {
+    margin-bottom: 0!important;
+}
+.bar-rank img {
+    max-width: 396px!important;
+}
+.bar-rank-all img {
+    max-width: 190px!important;
+}
+.bar-rank-item img {
+    max-width: 220px!important;
+}
+.bar-brand img {
+    max-width: 423px!important;
+}
+.bar-real img {
+    max-width: 543px!important;
+}
+.bar-ranking img {
+    max-width: 543px!important;
+}
+
+/* iframe */
+@media screen and (max-width: 414px){
+#bottom .waku.corde iframe {
+    width: 360px;
+    height: 270px;
+}
+#bottom .waku.pickup iframe {
+    width: 360px;
+    height: 2530px;
+}
+}
+@media screen and (max-width: 320px){
+#bottom .waku.corde iframe {
+    width: 320px;
+    height: 240px;
+}
+#bottom .waku.pickup iframe {
+    width: 320px;
+    height: 2260px;
+}
+}
+
+
+/********** common **********/
+#page img {
+    width: 100%;
+    vertical-align: top;
+}
+
+#page .base {
+    position: relative;
+}
+#page .pop {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#page .title_b {
+    margin: 0 auto 5%;
+}
+#page .title_t {
+    margin: 0 auto 2% ;
+}
+#page .img640 {
+    max-width: 640px;
+}
+.items3 .item {
+    width: 30%;
+    margin: 0 1%;
+}
+.item {
+    position: relative;
+}
+.item .item-photo {
+    margin-bottom: 2%;
+}
+.item .item-photo {
+    margin-bottom: 2%;
+}
+
+.item-photo {
+    margin-bottom: 3px;
+}
+.item-title {
+    overflow: hidden;
+    font-weight: bold;
+}
+.item-preprice {
+    line-height: 1;
+    text-align: right;
+}
+.item-preprice:before {
+    content:"通常価格";
+    margin-left: 5px;
+}
+.item-preprice:after {
+    content:"円⇒";
+    font-size: 60%;
+    margin-left: 5px;
+}
+.item-price {
+    line-height: 1;
+    text-align: right;
+    color: rgba(0,0,0,0.5);
+    letter-spacing: -2px;
+}
+.item-price span:after {
+    content:"円";
+    font-size: 60%;
+    margin-left: 5px;
+}
+.item-price:after {
+    content:"円(税込)";
+    font-size: 60%;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+    @media screen and (max-width: 414px){
+    #page p {
+        font-size: 12px;
+    }
+    }
+
+
+.link2 {
+    text-align:center;
+    margin: 5px 10% 20px!important;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: rgba(0,0,0,.02);
+    min-height: unset!important;
+    text-align: center!important;
+    padding: 0!important;
+    max-width: none;
+}
+.link2 a {
+    text-decoration: none!important;
+    color:#555;
+    padding: 5px!important;
+    display: block;
+    font-size: 11px;
+    background: none!important;
+}
+.link2 a:after {
+    content: none;
+}
+.link2 a:hover {
+    text-decoration: underline;
+    border: none;
+    background: none;
+    border-radius: 0;

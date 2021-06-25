@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* =======================================
+
+	CommonElements
+
+======================================= */
+body {
+	font-size: 100%;
+	line-height: 170%;
+	font-family: Arial,Helvetica,sans-serif;
+	color: #000;
+	text-align: center;
+	background: #fff;
+}
+
+a:link { text-decoration:none; color: #000;}
+a:visited { text-decoration:none; color: #000;}
+a:active { text-decoration:none; color: #000;}
+a:hover { text-decoration:none; color: #000;}
+
+h1 {
+	margin-bottom: 20px;
+	padding: 10px 0;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+h2 {
+	padding: 30px 0;
+	width: 100%;
+	font-size: 12px;
+}
+
+#container {
+	text-align: center;
+}
+
+#carousel {
+	margin: 0 auto;
+	width: 878px;
+	height: 250px;
+	text-align: left;
+	position: relative;
+}
+
+#carousel_prev,
+#carousel_next {
+	top: 0;
+	width: 15px;
+	height: 140px;
+	background: #000;
+	cursor: pointer;
+	position: absolute;
+}
+#carousel_prev {
+	left: -33px;
+	top:60px;
+/* 	background:transparent url(https://image.rakuten.co.jp/devirockstore/cabinet/03855821/imgrc0068297699.gif) no-repeat top left; */
+	background-color: white;
+}
+#carousel_next {
+	right: -33px;
+	top:60px;
+	/* background:transparent url(https://image.rakuten.co.jp/devirockstore/cabinet/03855821/imgrc0068297700.gif) no-repeat top left; */
+	background-color: white;
+}
+
+/* =======================================
+	imgä‘ó]îíÇÃí≤êÆ
+======================================= */
+
+#carousel ul li {
+	width:296px;
+	float: left;
+	display: inline;
+}
+
+
+
+/* =======================================
+	ClearFixElements
+======================================= */
+#carousel ul:after {
+	content: ".";
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+#carousel ul {
+	display: inline-block;
+	overflow: hidden;
+}

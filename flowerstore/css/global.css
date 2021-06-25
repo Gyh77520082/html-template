@@ -1,0 +1,1461 @@
+@charset "UTF-8";
+
+	/* ラッパー
+------------------------------------------------ */
+/* ヘッダー
+------------------------------------------------ */
+body {
+    position: relative;
+	/*min-width: 1200px;*/
+	-webkit-text-size-adjust: 100%;
+}
+
+
+/* ナビをブロック化 */
+li a {
+    display: block;
+    font-weight: bold;
+}
+
+#header {
+    padding: 4px 0 0px 0;
+	width: 1040px;
+}
+@media (max-width: 767px) {
+	#header {
+	width: 100%;
+}
+}
+#header_top{
+	overflow: hidden;
+}
+h1 {
+    float: left;
+    font-size: 10px;
+}
+
+#rakuten_nav {
+    float: right;
+}
+
+#rakuten_nav li {
+    float: left;
+    border-left: 1px solid #555;
+    padding: 0 10px;
+    font-size: 11px;
+}
+
+#rakuten_nav li:first-child {
+    border: 0;
+    padding-right: 10px;
+}
+
+#rakuten_nav .last-child {
+    padding-right: 0;
+}
+
+#rakuten_nav a {
+    text-decoration: none;
+}
+
+.header_img {
+    float: left;
+}
+
+.header_contact {
+    float: right;
+}
+/* グローバルナビ */
+#g-nav {
+	width: 100%;
+	height: 40px;
+    padding: 5px 0 10px 0;
+}
+#g-nav li {
+	position:relative;
+	z-index: 7;
+    float: left;
+    padding-left: 3px;
+}
+#g-nav li:first-child {
+    padding: 0;
+}
+/* プルダウンメニュー */
+#g-nav li ul{
+	position: absolute;
+	z-index: 6;
+	top: 40px;
+	left: 0;
+	margin-left: 3px;
+	width: 144px;
+	border:1px solid #aaa;
+	background:#fff;
+}
+#g-nav li:first-child ul{
+	margin-left: 0;
+}
+#g-nav li ul li{
+	width: 124px;
+	margin:0 10px;
+	height: 0;
+	max-height: 0;
+	overflow: hidden;
+	color: #fff;
+	-moz-transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	-ms-transition: 0.3s linear;
+	transition: 0.3s linear; 
+	}
+#g-nav li ul li a{
+	padding: 10px 0;
+	font-size: 10px;
+	background: #fff;
+	font-weight: bold;
+	}
+#g-nav li ul li a:hover{
+	opacity: 1.0;
+	color: #aaa;
+}
+#g-nav li:hover ul li{
+	height: auto;
+	min-width: 30px;
+	max-height: 60px;
+	border-top: 1px dashed #aaa;
+}
+#g-nav li:hover ul li:first-child{
+	border-top: 0;
+}
+#top_info{
+	position:relative;
+	z-index: 5;
+	height: 100px;
+	background: #eee;
+}
+/* 検索エリアと楽天バナーを包むボックス */
+#search {
+    float: left;
+    height: 80px;
+    margin: 10px 0px;
+    font-size: 10px;
+}
+#search h2 {
+    margin: 6px 0 0px 18px;
+    padding-left: 28px;
+    font-size: 18px;
+    height: 22px;
+    letter-spacing: 0.3em;
+    line-height: 1.2em;
+    background: url(https://shopping.geocities.jp/ocstyle/img/search_icon.gif) no-repeat 0 0;
+}
+input[name="va"] {
+    width: 140px;
+    height: 12px;
+}
+input[name="pf"],input[name="pt"] {
+    width: 30px;
+    height: 12px;
+}
+input[type="text"],input[type="submit"] {
+    margin: 0 2px 0 2px;
+}
+input[type="submit"] {
+    padding-top: 2px;
+    margin-top: 4px;
+    width: 44px;
+    height: 22px;
+    text-align: center;
+}
+#search form {
+    float: left;
+    padding-left: 18px;
+    padding-top: 4px;
+}
+@media screen and (max-device-width: 480px) {
+    #search {
+        position: relative;
+        overflow: hidden;
+    }
+    #search form {
+        position: absolute;
+        left: 10px;
+    }
+    #search ul {
+        position: absolute;
+        left: 190px;
+    }
+}
+#search ul {
+    float: right;
+    width: 256px;
+}
+#search input {
+    padding-bottom: 2px;
+}
+#search li:first-child {
+    border: none;
+}
+#search .border_none {
+    border-left: none;
+}
+#search ul {
+    padding-top: 6px;
+}
+#search li {
+    float: left;
+    width: 70px;
+    height: 14px;
+    border-left: 1px solid #aaa;
+    margin: 2px 0 6px 0;
+    padding: 0 6px;
+}
+#search li a {
+    text-decoration: underline;
+}
+
+#search li a:hover {
+    color: #555;
+    text-decoration: none;
+}
+
+/* 楽天広告スライド */
+#rakuten_bnr_slide {
+    margin-top: 10px;
+    float: right;
+}
+/* ここは楽天広告エリアスライダーcss設定です */
+.slider {
+    position: relative;
+    width: 588px;
+    height: 70px;
+}
+
+.slider a:focus {
+    outline: 0;
+}
+.sls-view {
+    position: relative;
+    width: 500px;
+    height: 70px;
+    border: 1px solid #bbb;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+.sls-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sls-content {
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 160px;
+}
+
+.sls-content a {
+    display: block;
+}
+
+.sls-prev, .sls-next {
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    height: 60px;
+}
+
+.sls-prev {
+    background: url(https://shopping.geocities.jp/ocstyle/img/r-bnr_left.gif) no-repeat;
+    left: 20px;
+}
+
+.sls-next {
+    background: url(https://shopping.geocities.jp/ocstyle/img/r-bnr_right.gif) no-repeat;
+    right: 20px;
+}
+/* OC広告スライド */
+#prom_slide {
+	position:relative;
+	z-index: 5;
+    width: 1040px;
+    height: 174px;
+    margin: 20px 0 10px 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.slides {
+    padding-top: 20px;
+}
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+    outline: none;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* OC広告エリアスライダーcss設定です */
+.flexslider {
+    margin: 0;
+    padding: 0;
+}
+
+.flexslider .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+    display: block;
+    width: 100%;
+}
+
+.flex-pauseplay span {
+    text-transform: capitalize;
+}
+
+.no-js .slides > li:first-child {
+    display: block;
+}
+/* Clearfix for the .slides element */
+.slides:after {
+    display: block;
+    height: 0;
+    content: "\0020";
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+}
+
+.flexslider {
+    position: relative;
+    border: 4px solid #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    margin: 0 0 60px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    zoom: 1;
+    background: #fff;
+}
+
+.flex-viewport {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+/* Direction Nav */
+.flex-direction-nav a {
+    top: 35%;
+}
+/* IE7用 */
+*+html .flex-direction-nav a {
+    top: 30%;
+}
+
+.flex-direction-nav a {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 20px;
+    height: 60px;
+    margin: -20px 0 0;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.flex-direction-nav .flex-prev {
+    background: url(https://shopping.geocities.jp/ocstyle/img/r-bnr_arrow_left.gif) no-repeat;
+    left: 8px;
+}
+
+.flex-direction-nav .flex-next {
+    background: url(https://shopping.geocities.jp/ocstyle/img/r-bnr_arrow_right.gif) no-repeat;
+    right: 8px;
+}
+
+.flexslider:hover .flex-prev {
+    opacity: 1.0;
+}
+
+.flexslider:hover .flex-next {
+    opacity: 1.0;
+}
+
+.flex-direction-nav .flex-disabled {
+    opacity: 0!important;
+    filter: alpha(opacity=0);
+    cursor: default;
+}
+
+.flex-direction-nav a:before {
+    font-family: "flexslider-icon";
+    font-size: 40px;
+    display: inline-block;
+    content: '';
+}
+
+.flex-direction-nav a.flex-next:before {
+    content: '';
+}
+/* OC広告コントローラー*/
+.flex-control-nav {
+    position: relative;
+	margin-top: -20px;
+    width: 100%;
+    text-align: center;
+}
+/* IE7 */
+*+html .flex-control-nav {
+    margin-top: -20px;
+}
+/* IE9 */
+.flex-control-nav:not(:target) {
+    margin-top: -20px;
+}
+/* IE10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .flex-control-nav {
+        top: 110%;
+    }
+}
+.flex-control-nav li {
+    display: inline-block;
+    *display: inline;
+    margin: 0 6px;
+    zoom: 1;
+}
+.flex-control-paging li a {
+    display: block;
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    text-indent: -9999px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    -o-box-shadow: inset 0 0 3px rgba(0,00,0.3);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    background: #666;
+    background: rgba(0,0,0,0.5);
+}
+
+.flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0,0,0,0.7);
+}
+
+.flex-control-paging li a.flex-active {
+    cursor: default;
+    background: #000;
+    background: rgba(0,0,0,0.9);
+}
+
+.flex-control-thumbs {
+    position: static;
+    margin: 5px 0 0;
+    overflow: hidden;
+}
+
+.flex-control-thumbs li {
+    float: left;
+    width: 25%;
+    margin: 0;
+}
+
+.flex-control-thumbs img {
+    display: block;
+    width: 100%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.flex-control-thumbs img:hover {
+    opacity: 1;
+}
+
+.flex-control-thumbs .flex-active {
+    opacity: 1;
+    cursor: default;
+}
+
+@media screen and (max-width: 860px) {
+    .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: 10px;
+    }
+
+    .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: 10px;
+    }
+    #header{
+    	width:100%;
+    }
+}
+
+/* メインスライド */
+#main_slide {
+
+    height: 536px;
+    padding-top: 10px;
+	position:relative;
+	z-index: 5;
+}
+/* メインフラッシュスライダーcss設定です */
+
+.gv_galleryWrap { 
+	position: relative;  
+	background: #222;
+	
+}
+.gv_gallery { 
+	position: relative;
+	overflow: hidden;
+}
+
+.gv_imageStore { 
+	position: absolute; 
+	top: -10000px; 
+	left: -10000px;
+	visibility: hidden; 
+}
+.gv_panelWrap { 
+	position: absolute;
+	filter: inherit;  
+	overflow: hidden; 
+}
+
+
+
+/* GALLERY PANELS */
+.gv_panel {
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	filter: inherit; 
+	overflow: hidden; 
+	z-index: 100; 
+}
+.gv_panel img { 
+	position: absolute; 
+}
+
+.gv_overlay { 
+	position: absolute; 
+	color: white; 
+	z-index: 200; 
+	background: #222; 
+}
+.gv_showOverlay { 
+	position: absolute; 
+	cursor: pointer;
+	z-index: 200;
+}
+.gv_filmstripWrap {
+	position: absolute; 
+	overflow: hidden;
+}
+.gv_filmstrip {
+	position: absolute; 
+	top: 0;
+	left: 0; 
+	margin: 0; 
+	padding: 0; 
+}
+.gv_frame { 
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.gv_frame .gv_thumbnail {
+	 position: relative;
+	 overflow: hidden !important; 
+}
+.gv_frame img { 
+	position: absolute;
+	border: 4px solid #222;
+}
+.gv_frame .gv_caption { 
+	height: 14px; 
+	color: white;
+	font-size: 10px;
+	line-height: 14px;  
+	text-align: center; 
+}
+.gv_navWrap {
+	position: absolute;
+	text-align: center;
+}
+/* レフト
+------------------------------------------------ */
+#left{
+	float: left;
+	width: 130px;
+	padding-right: 25px;
+}
+#left p{
+	padding: 10px 0;
+}
+	/* センター
+------------------------------------------------ */
+#center{
+	float: left;
+	width: 182px;
+}
+#center_nav {
+	width: 182px;
+	border: 1px solid #aaa;
+	border-top: 0;
+	background: #fff;
+}
+	
+#center_nav h2 {
+	padding-top: 3px;
+}
+#center_nav .plice{
+	padding: 0;
+}
+/* アコーディオン-アイコン位置,hover,クリック時 */
+.accordion .adnMenu a {
+	display: block;
+	position: relative;
+	padding: 3px 0;
+	background: url(https://shopping.geocities.jp/ocstyle/img/center_arrow.gif) no-repeat 228px 50%;
+}
+.accordion .adnMenu a:hover { 
+	background:url(https://shopping.geocities.jp/ocstyle/img/center_arrow_hover.gif) no-repeat 228px 50%;
+}
+.accordion .current a {
+	background: url(https://shopping.geocities.jp/ocstyle/img/center_arrow_hover.gif) no-repeat 228px 50%;
+}
+/* 価格帯検索、カテゴリー検索リンクの詳細設定*/
+.category{
+	padding: 2px 0;
+}
+.plice + ul li,.adnBox li {
+	width: 203px;
+	border-bottom: 1px dashed #555;
+	margin: 0 auto;
+	padding: 5px 0;
+	font-size: 12px;
+}
+.adnBox li.last-child{
+	margin-bottom: 5px;
+}
+.accordion h3{
+	overflow:hidden;
+}
+/* .ac_menu */
+.main_bland {
+	padding-bottom:2px;
+}
+.main_bland li {
+	display: block;
+	padding-top: 6px;
+	position:relative;
+}
+
+.accordion #last_ac {
+	padding-bottom: 2px;
+}
+.accordion .last_ac {
+	margin-bottom: 5px;
+}
+
+.faq {
+	padding-top:10px;
+}
+.secret {
+	padding-top:10px;
+}
+
+/* カレンダー */
+#business-day {
+	padding: 10px 0;
+}
+#business-day table{
+	width: 250px;
+	height: 230px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-spacing:0 1px;
+	margin-top:10px;
+	font-size:11px;
+	text-align:center;
+	table-layout: fixed;
+	background: #ccc;
+}
+#business-day table .year-manth{
+	padding-top:7px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#business-day table tr{
+	height: 20px;
+}
+#business-day table td{
+	background: #fff;
+}
+#business-day table tr.bg2 { background-color:#fff; }
+#business-day table .sun { color:red; background-color:#ffe4ce; }
+#business-day table .today { background-color:#E6E6E6; font-weight:bold; }
+.business-day-info {
+	padding: 5px;
+	margin-top: 10px;
+	border: 1px solid #aaa;
+	font-size: 11px;
+}
+/* レビュー、メールマガジン、モバイルショッピング */
+#shop-info {
+	width: 250px;
+}
+.revew {
+	padding-top:10px;
+}
+.mail-magazine {
+	padding-top: 6px;
+}
+.mobie-shopping {
+	padding-top: 10px;
+}
+/* ライト
+------------------------------------------------ */
+/* コンテンツの情報、見出しの位置などの設定 */
+#right {
+	float: left;
+	width: 800px;
+	margin-left: 15px;
+	/*margin-top: 90px;*/
+}
+	
+#right > div {
+	position: relative;
+	width: 100%;
+	border: 1px solid #aaa;
+	height: 100%;
+	margin-top: 27px;
+	margin-bottom: 47px;
+	background: #fff;
+}
+
+#right > div h2 {
+	position: absolute;
+	top: -33px;
+	left: -21px;
+}
+/* ランキング */
+#ranking .bx-wrapper {
+	position:relative;
+	margin: 0 0 50px 55px;
+	*zoom: 1;
+	width: 490px;
+}
+#ranking .ranking_refix-date{
+	position:absolute;
+	bottom: 15px;
+	right: 15px;
+}
+.ranking-img{
+	padding-bottom: 10px;
+}
+#ranking .bx-wrapper .bx-controls-direction a {
+	top: 60%;
+}
+
+.ranking_category{
+	position:relative;
+	height: 20px;
+	font-weight:bold;
+	padding-top:70px;
+	
+}
+.ranking_category p{
+	position: absolute;
+	bottom: 33px;
+	padding-right: 0;
+	padding-bottom:5px;
+	font-size:10px;
+	line-height: 1.3em;
+}
+#ranking p.star{
+	float:left;
+	padding-top: 2px;
+	padding-right: 10px;
+}
+.ranking_category h3{
+	position:absolute;
+	left: 0;
+	bottom: 10px;
+	width: 150px;
+	height: 22px;
+	color: #fff;
+	font-size: 15px;
+	line-height: 23px;
+	text-align:center;
+	text-indent: 20px;
+	font-weight:bold;
+	background: url(https://shopping.geocities.jp/ocstyle/img/ranking_h3_back.gif) no-repeat;
+}
+#ranking ul li{
+	font-size: 11px;
+}
+
+/* 新着アイテム */
+#new-item{
+	font-size: 14px;
+}
+/* 新着アイテムtopページの設定 */
+#new-item .new-item_topic{
+	display:inline-block;
+	color: #ff772e;
+	border: 1px solid #ff772e;
+	font-size:13px;
+	margin-left:6px;
+	padding: 1px 2px;
+}
+.new-item_box_example{
+	padding: 20px 0 8px 0;
+	overflow:hidden;	
+}
+#new-item .new-item_area{
+	border-bottom: 1px dashed #aaa;
+	width: 550px;
+	margin: 4px auto 4px;
+	padding-bottom: 4px;
+	overflow:hidden;
+}
+.new-item_box_example .new-item_area .new-item_img img{
+	width: 50px;
+	height: 50px;
+}
+.new-item_box_example .new-item_area > p{
+	float: left;
+	width:56px;
+}
+.new-item_box_example .new-item_area dl {
+	padding-left:20px;
+	float: left;
+}
+.new-item_box_example .new-item_area dt{
+	position:relative;
+}
+.new-item_box_example .new-item_area dt .topic{
+	position:absolute;
+	top:-10px;
+	padding-top: 10px;
+}
+.new-item_box_example .new-item_area dt img{
+	padding-left:10px;
+}
+.new-item_box_example .new-item_area dd a{
+	text-decoration:underline;
+}
+.new-item_box_example .new-item_area dd a:hover{
+	opacity: 1.0;
+	text-decoration: none;
+}
+/* 全ての新着アイテムを記すエリア */
+
+.new-item_box_all .new-item_area a{
+	display:block;
+}
+.new-item_box_all {
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.new-item_box_all p{
+	font-weight:bold;
+	color: #ff4500;
+	text-align:center
+}
+.new-item_box_all  p span{
+	color: #ff4500;
+	font-size:11px;
+}
+#new-item .new-item_box_all .new-item_area{
+	float:left;
+	width: 150px;
+	padding: 0 13px;
+	border: none;
+}
+.new-item_box_all .new-item_area .new-item_img img{
+	float:left;
+	width: 150px;
+	height: 150px;
+}
+	
+.new-item_box_all .new_month h3{
+	color: #fff;
+	height: 20px;
+	background: #ff772e;
+	text-align:center;
+}
+.new_bland{
+	width:100%;
+	overflow:hidden;
+}
+	
+.new-item_box_all .new_day h4{
+	border-bottom: 1px solid #aaa;
+	padding-top: 20px;
+	margin-bottom:10px;
+	
+}
+.new-item_box_all .new_bland h5 span{
+    border: 1px solid #aaa;
+	padding: 2px 5px;
+	display:inline-block;
+}
+.new-item_box_all .new_bland h5{
+	width: 100%;
+	padding-bottom: 5px;
+}
+.new_month,.new_day,.new_bland{
+	width: 100%;
+	overflow:hidden;
+
+}
+
+
+
+/* ピックアップ */
+#pick-up .sub_category{
+	width:558px;
+	margin: 0 auto;
+	padding-top:20px;
+}
+#pick-up .sub_category h3{
+	width: 558px;
+	border-bottom: 1px solid #aaa;
+	margin-top:2px;
+	margin-bottom:20px;
+	font-size: 13px;
+	font-weight:bold;
+	text-indent: 1em;
+	line-height:1.1em;
+	background: url(https://shopping.geocities.jp/ocstyle/img/pick-up_ico.gif) no-repeat 0 1px;
+}
+#pick-up .sub_category p{
+	font-size:11px;
+	line-height: 1.2em;
+}
+#pick-up .sub_category h4{
+	padding-top: 2px;
+	font-size: 18px;
+	font-weight:bold;
+}
+#pick-up .sub_category h4 span{
+	font-size: 11px;
+}
+#pick-up #sub_category_box{
+	padding-bottom:30px;
+}
+/*bx*/
+.bx-wrapper {
+	position: relative;
+	width:510px;
+	margin: 0 0 30px 40px;
+	*zoom: 1;
+	
+}
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	display: block;
+	width: 13px;
+	height: 13px;
+	border: 1px solid #aaa;
+	margin: 0 5px;
+	text-indent: -9999px;
+	outline: 0;
+	background: #fff;
+}
+
+.bx-wrapper .bx-prev {
+	background: url(https://shopping.geocities.jp/ocstyle/img/carousel_left.gif) no-repeat;
+	left: -40px;
+}
+
+.bx-wrapper .bx-next {
+	right: -30px;
+	background: url(https://shopping.geocities.jp/ocstyle/img/carousel_right.gif) no-repeat;
+}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 35%;
+	z-index: 9999;
+	width: 14px;
+	height: 42px;
+	margin-top: -16px;
+	text-indent: -9999px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #ff772e;
+}
+/* レビュー */
+#revew iframe{
+	padding:30px 10px 30px 10px;
+}
+/* ブランド
+------------------------------------------------ */
+/* 主要ブランド */
+#brand_example ul{
+	padding: 29px 0 0 29px;
+	overflow: hidden;
+}
+#brand_example ul li{
+	float:left;
+	padding: 0 16px 8px 0;
+}
+/* 全てのブランド */
+.brand_all{
+	padding: 30px 60px;
+}
+.brand_all h3{
+	width:200px;
+	font-size: 12px;
+	font-weight:bold;
+	border-bottom: 1px solid #aaa;
+	margin-bottom:8px;
+	text-indent: 10px;
+	line-height: 16px;
+	background:url(https://shopping.geocities.jp/ocstyle/img/pick-up_ico.gif) no-repeat;
+}
+.brand_a-ha > div,.brand_last > div{
+	float:left;
+	padding-bottom: 20px;
+	
+}
+.brand_a,.brand_ta-na,.brand_ma-ra-wa{
+	padding-right: 60px;
+}
+.brand_all li{
+	font-size: 12px;
+	border-bottom: 1px dashed #aaa;
+	padding: 2px 0;
+	
+}
+/* 一覧ページへのリンクの設定です */
+.and_all{
+	padding: 0 37px 10px 0;
+	text-align:right;
+	font-size:12px;
+	letter-spacing: 0.05em;
+}
+#new-item .and_all{
+	padding-right:20px;
+	height: 10px;
+}
+.and_all img{
+		line-height:1px;
+	padding-left: 8px;
+}
+.and_all a{
+	text-decoration:underline;
+}
+.and_all a:hover{
+	text-decoration:none;
+	opacity: 1.0;
+}
+	
+
+/* ショッピングガイド
+------------------------------------------------ */
+#shopping-guide{
+	width: 1038px;
+	border: 1px solid #aaa;
+	border-top: none;
+	font-size: 11px;
+	line-height:1.7em;
+	overflow:hidden;
+	background: #fff;
+}
+
+@media (max-width: 767px){
+	#shopping-guide{
+		width: 100%;
+	}
+}
+#shopping-guide > div{
+	float:left;
+	width: 500px;
+	padding: 10px 9px;
+}
+@media(max-width: 767px){
+#shopping-guide > div{
+	width: 100%;
+	padding:0;
+}
+}
+.red{
+	color:#F00;
+}
+
+#shopping-guide h4{
+	color:#00F;
+	font-size: 12px;
+}
+#shopping-guide p{
+	padding-top: 6px;
+}
+#shopping-guide p .np{
+	padding-bottom: 6px;
+}
+strong{
+	font-size:11px;
+}
+
+#shopping-guide h3{
+	padding: 5px 0;
+}
+h3 .top_padding{
+	background:#333;
+}
+#shopping-guide dt{
+	display:list-item;
+	list-style-type:disc;
+	list-style-position:inside;
+}
+
+#shopping-guide li{
+	list-style-type:disc;
+	list-style-position:inside;
+}
+#shopping-guide .time_img{
+	padding:10px 0;
+}
+/* フッター
+------------------------------------------------ */
+#footer{
+	width: 100%;
+	background:#eee;
+}
+#footer_wrap{
+	width:1040px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+#footer li{
+	float:left;
+	padding: 10px 0 0 50px;
+	
+}
+#footer a{
+	font-weight:bold;
+}
+#footer a:hover{
+	opacity: 0.7;
+}
+#footer dd a{
+	display:inline;
+}
+#footer ul{
+	overflow:hidden;
+}
+#footer .footer_first{
+	padding: 15px 0 10px 0;
+}
+
+.footer_first_01{
+	width: 204px;
+	height: 190px;
+}
+.footer_first_02{
+	width: 160px;
+	height: 190px;
+}
+.footer_first_03{
+	width: 350px;
+	height: 190px;
+}
+.footer_first_03 dd{
+	width: 170px;
+	float:left;
+}
+.footer_first_04{
+	width: 100px;
+	height: 190px;
+}
+.footer_first_05{
+	width:204px;
+	height: 120px;
+}
+.footer_first_06{
+	width:160px;
+	height: 120px;
+}
+.footer_first_07{
+	width: 510px;
+	height: 120px;
+}
+.footer_first_07 dd{
+	width: 255px;
+	float:left;
+}
+#footer dt{
+	font-size: 16px;
+}
+#footer dd{
+	padding: 3px 0;
+	font-size: 10px;
+}
+
+#footer_bottom{
+	padding-bottom: 10px;
+	text-align:center;
+	background:#eee;
+}
+#footer_top {
+	padding: 0 0 20px 10px;
+}
+
+/* 出荷日予定
+------------------------------------------------ */
+.dateblock {
+	position:absolute;
+	left:200px;
+	top:32px;
+	font-size: 22px;
+	color: #ff4500;
+}
+.timeblock {
+	position:absolute;
+	left:290px;
+	top:120px;
+	font-size:18px;
+	color:#000000;
+}
+
+/* 出荷日予定_サイドナビ用
+------------------------------------------------ */
+.dateblock_y {
+	position:absolute;
+	left:30px;
+	top:25px;
+	font-size: 18px;
+	color: #ff4500;
+}
+.timeblock_y {
+	position:absolute;
+	left:105px;
+	top:95px;
+	font-size:15px;
+	color:#000000;
+}
+
+
+
+/* 個別ページ用
+------------------------------------------------ */
+/* FAQ */
+#faq{
+    width:600px;
+	font-size:16px;
+	line-height:1.5em;
+	letter-spacing: 0.1em;
+	text-align:left;
+	overflow:hidden;
+	padding-bottom:50px;
+}
+
+#faq a{
+	color:#C00;
+}
+#faq a:hover{
+	color:#F90;
+}
+
+.faq_ttl{
+	color:#C00;
+	background-image:url(https://shopping.geocities.jp/ocstyle/img/bg_naname.gif);
+	padding:5px 0px;
+}
+
+.faq_ttl img{
+	margin:0px 10px 0px 5px;
+	color:#CC6600;
+	vertical-align:middle;
+}
+
+.faq_aka{
+	color:#C00;
+}
+
+.mokuji {
+background-image:url(https://shopping.geocities.jp/ocstyle/img/bg_naname.gif);
+height: 20px;
+width: 600px;
+padding:4px 0px;
+}
+
+/* Yahooサイドナビ用
+------------------------------------------------ */
+#sideright{
+	width: 200px;
+	text-align:right;
+}
+#sideright p{
+	padding: 10px 0;
+}
+
+/* カレンダー */
+#business-day_y {
+	padding: 10px 0;
+}
+#business-day_y table{
+	width: 200px;
+	height: 230px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-spacing:0 1px;
+	margin-top:10px;
+	font-size:11px;
+	text-align:center;
+	table-layout: fixed;
+	background: #ccc;
+}
+#business-day_y table .year-manth{
+	padding-top:7px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#business-day_y table tr{
+	height: 20px;
+}
+#business-day_y table td{
+	background: #fff;
+}
+#business-day_y table tr.bg2 { background-color:#fff; }
+#business-day_y table .sun { color:red; background-color:#ffe4ce; }
+#business-day_y table .today { background-color:#E6E6E6; font-weight:bold; }
+
+/* アコーディオン */
+#center_nav_y {
+	width: 198px;
+	border: 1px solid #aaa;
+	border-top: 0;
+	background: #fff;
+}
+
+
+/* アコーディオン-アイコン位置,hover,クリック時 */
+.accordion .adnMenu_y a {
+	display: block;
+	position: relative;
+	padding: 3px 0;
+	background: url(https://shopping.geocities.jp/ocstyle/img/center_arrow.gif) no-repeat 178px 50%;
+}
+.accordion .adnMenu_y a:hover { 
+	background:url(https://shopping.geocities.jp/ocstyle/img/center_arrow_hover.gif) no-repeat 178px 50%;
+}
+.accordion .current_y a {
+	background: url(https://shopping.geocities.jp/ocstyle/img/center_arrow_hover.gif) no-repeat 178px 50%;
+}
+
+
+/* 全ページ共通
+------------------------------------------------ */
+
+a{
+　　　-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* 背景バナー */
+#big_wrapper{
+	/*width: 1195px;*/
+	margin: 0 auto;
+	background: url(kkk.jpg) repeat-y scroll 100%;
+}
+
+/* ブラウザ左揃えも広告の設定 */
+#browser_left{
+	position:fixed;
+	top: 70px;
+	left: 0;
+}
+#browser_left a{
+	position:relative;
+	left: -20px;
+}
+#browser_left a:hover{
+	position:relative;
+	left: 0;
+}
+.left_fix{
+	padding-bottom:10px;
+}
+.left_fix a:hover{
+	opacity: 0.7;
+}
+/* ページトップの設定 */
+#pageTop{
+	position:fixed;
+	z-index:4;
+	bottom:0;
+	right:0;
+	}
+#pageTop:hover{
+	opacity: 0.7;
+	}
+
+
+@media (max-width: 767px){
+	#right{
+		width: 100%;
+		margin: 0;
+	}
+}

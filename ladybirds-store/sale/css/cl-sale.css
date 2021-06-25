@@ -1,0 +1,682 @@
+f@charset "utf-8";
+/* CSS Document */
+
+
+
+body {
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo","游ゴシック", YuGothic, sans-serif;
+}
+
+
+
+/********** common **********/
+/* anker */
+#ct-medama, #ct-pick, #ct-time, #ct-newarr, #ct-ranking, #ct-shun, #ct-sale {
+    /*padding-top: 100px!important;*/
+    display: block;
+    margin: 0% auto;
+}
+    @media screen and (max-width: 414px){
+    #ct-medama, #ct-pick, #ct-time, #ct-newarr, #ct-ranking, #ct-shun, #ct-sale {
+        width: 98%;
+        margin: 0 auto;
+    }
+    }
+.ss .title {
+    margin: 0 auto 2%;
+    max-width: 945px;
+}
+.ss .item {
+    position: relative;
+}
+
+
+/********** timer **********/
+#ct-timer {
+    background-image: url(../image/ss1806/timer.png);
+    background-repeat: no-repeat;
+    height: 102px;
+    position: relative;
+}
+#ct-timer .timer {
+position: absolute;
+top: 38px;
+right: 25px;
+height: 30px;
+}
+#ct-timer input {
+width: 310px;
+border: none;
+background: none;
+}
+#ct-timer .timer-text {
+font-size: 24px;
+color: #FEEC00;
+}
+@media screen and (max-width: 414px){
+    #ct-timer {
+    height: 55px;
+    background-image: url(../image/ss1806/timer_sp.png);
+    background-size: 100%;
+    }
+    #ct-timer .timer {
+    top: 19px;
+    left: inherit;
+    right: 0;
+    width: 156px;
+    }
+    #ct-timer input {
+    width: 156px;
+    text-align: center;
+    }
+    #ct-timer .timer-text {
+    font-size: 16px;
+    color: #FF9000;
+    font-weight: bold;
+    }
+}
+@media screen and (max-width: 320px){
+    #ct-timer {
+    height: 48px;
+    }
+    #ct-timer .timer {
+    top: 14px;
+    width: 140px;
+    }
+    #ct-timer input {
+    width: 140px;
+    }
+    #ct-timer .timer-text {
+    font-size: 14px;
+    }
+}
+
+
+/********** bannertop **********/
+#ct-bannertop {
+    width:100%;
+	padding-top:50px;
+}
+#ct-bannertop .base {
+    max-width: 945px;
+    margin: 0 auto;
+}
+#ct-bannertop p {
+    margin-top: 5px;
+}
+#ct-bannertop p span {
+    color: #FB4689;
+}
+
+#ct-bannertop .coupon {
+    margin: 0 auto;
+    width: 95%;
+    text-align: right;
+}
+#ct-bannertop .bannertop-b {
+    background-image: url(../image/ss/su-main-back.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+    padding-bottom: 1.5%;
+    margin-top: -1%;
+}
+#ct-bannertop .after.bannertop-b {
+    background-image: url(../image/ss/su-main-back-after.gif);
+}
+
+
+/********** mokuji **********/
+#ct-mokuji {
+}
+#ct-mokuji .bannertop-b .mokuji {
+    padding-top: 2%;
+    text-align: center;
+}
+#ct-mokuji .bannertop-b .mokuji div {
+    display: inline-block;
+    margin: 0% .3% 1%;
+    width: 31%;
+}
+#ct-mokuji .bannertop-b .mokuji div img {
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transform: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all  0.1s ease;
+}
+#ct-mokuji .bannertop-b .mokuji div img:hover {
+    -webkit-transform: translate(1px,1px);
+    -moz-transform: translate(1px,1px);
+    -ms-transform: translate(1px,1px);
+    -o-transform: translate(1px,1px);
+    transform: translate(1px,1px);
+}
+@media screen and (max-width: 414px){
+    #ct-mokuji .bannertop-b .mokuji div {
+        /*width: 45%;*/
+    }
+}
+
+#slidemenu .mokuji {
+    width: 85%;
+    margin: 2% auto;
+}
+#slidemenu .mokuji div {
+    margin-bottom: 2%;
+}
+#slidemenu .mokuji div img {
+    width: 100%;
+}
+
+
+/********** pre sale **********/
+.presale {
+    margin-bottom: 5%;
+}
+.presale .items2 div {
+    width: 43%;
+    margin: 2% 3%;
+      padding-bottom: 4%;
+}
+.presale .item-title {
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+.presale .item-price {
+    margin: 1% 0;
+}
+.presale .item-price span {
+    color: #FB4689;
+    display: block;
+    font-size: 2.8em;
+    margin-bottom: 1%;
+}
+@media screen and (max-width: 414px){
+.presale .item-title {
+    margin-left: 40%;
+}
+.presale .item-price span {
+    font-size: 1.6em;
+}
+}
+
+
+/********** 浴衣 **********/
+.yukata {
+    margin-bottom: 15%;
+}
+.yukata .item {
+    margin-bottom: 4%;
+}
+.yukata .item-title {
+    margin-left: 45%;
+    margin-bottom: 5%;
+}
+.yukata .item-price {
+    margin: 1% 0;
+}
+.yukata .item-price span {
+    color: #FB4689;
+    display: block;
+    font-size: 2.8em;
+    margin-bottom: 1%;
+}
+@media screen and (max-width: 414px){
+.yukata .item-title {
+    margin-left: 40%;
+}
+.yukata .item-price span {
+    font-size: 1.6em;
+}
+}
+
+
+/********** evbanner **********/
+.ct-evbanner {
+    width: 95%;
+    margin: 2% auto;
+    text-align: center;
+}
+.ct-evbanner p {
+    margin-bottom: 3%;
+    font-size: 140%;
+    font-weight: bold;
+}
+.ct-evbanner.coupon p {
+    margin-bottom: 1%;
+    font-size: .9rem;
+}
+.ct-evbanner.coupon .bt {
+    max-width: 246px;
+    margin-top: 5px;
+}
+.ct-evbanner.coupon .text {
+    text-decoration: underline;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+.ct-evbanner.coupon .text:hover {
+    text-decoration: none;
+}
+.ct-evbanner p img {
+    max-width: 640px;
+}
+.ct-evbanner p:last-child {
+    margin-bottom: 0;
+}
+.ct-evbanner p span {
+    color: #FB4689;
+    font-size: 140%;
+    font-weight: bold;
+}
+.ct-evbanner p span.kome {
+    font-size: 11px;
+    color: #666;
+}
+
+.ct-evbanner.half p {
+    width: 49%;
+    display: inline-block;
+}
+    @media screen and (max-width: 414px){
+    .ct-evbanner {
+        width: 90%;
+    }
+    .ct-evbanner p span {
+        font-size: 100%;
+    }
+    }
+
+
+/********** medama new **********/
+#ct-medama {
+    margin-bottom: 0;
+}
+#ct-medama .banner-items,
+#ct-time .banner-items {
+    max-width: 945px;
+}
+.banner-items div {
+    position: relative;
+    background: #FFF;
+}
+#ct-time .banner-items div {
+    margin-bottom: 5%;
+}
+.banner-items div .item-photo {
+    top: 1.7%!important;
+    left: 1.1%!important;
+    width: 61.4%!important;
+}
+.banner-items div .num {
+    position: absolute!important;
+    top: 0%;
+    left: 65%;
+    height: 100%!important;
+}
+.banner-items div .num img {
+    height: 100%!important;
+    width: auto!important;
+    margin: 0!important;
+}
+.banner-items div .num .aa {
+    height: 100%!important;
+    width: auto!important;
+    margin: 0 -8%!important;
+}
+.banner-items div .prezei {
+    left: 72.5%;
+}
+.banner-items div .prezei .aa {
+    margin: 0 -5%!important;
+}
+.banner-items div .prizei {
+    left: 83%;
+}
+.banner-items div .favorite {
+    position: absolute;
+    bottom: -13%;
+    margin-bottom: 0;
+}
+
+.banner-items .big {
+    width: 100%;
+}
+.banner-items .small {
+    border: 7px solid #EF0D69;
+    width: 48.5%;
+    margin: 5% .6% 0%!important;
+    border-radius: 7px;
+    padding-bottom: 2%;
+}
+.banner-items .small .pop {
+    top: 0%!important;
+    left: 0%!important;
+    
+}
+#ct-time .banner-items .small {
+    border-color: #00B200;
+}
+#ct-time .banner-items .small:nth-child(n+7) {
+    width: 32%;
+    border: 5px solid #00B200;
+}
+.banner-items .small .item-photo {
+    width: 100%!important;
+}
+.banner-items .small .item-title {
+    height: 70px;
+    margin: 3% 0 3% 40%;
+    font-size: 1.8rem;
+    text-align: left;
+    overflow: hidden;
+}
+#ct-time .banner-items .small:nth-child(n+7) .item-title {
+    font-size: 1.1rem;
+    overflow: hidden;
+    height: 50px;
+}
+.banner-items .small .item-preprice {
+    margin-right: 3rem;
+    text-align: right;
+    font-weight: bold;
+}
+.banner-items .small .item-preprice.emp:before,
+.banner-items .small .item-preprice.emp:after {
+    content: "";
+}
+.banner-items .small .item-price {
+    font-size: 1rem;
+    display:block;
+    text-align: right;
+    color: #CCC;
+    letter-spacing: -0.9px;
+    margin-top: 2%;
+    margin-right: 1rem;
+}
+.banner-items .small .item-price span {
+    font-size: 2.4rem;
+    color: #FB4689;
+    font-weight: bold;
+    letter-spacing: -0.9px;
+    margin-right: .5rem;
+}
+#ct-time .banner-items .small:nth-child(n+7) .item-price span {
+    font-size: 2rem;
+}
+    @media screen and (max-width: 414px){
+    .banner-items .small {
+        border: 3px solid #EF0C68;
+    }
+    .banner-items .small .item-title {
+        height: 30px;
+    }
+    .banner-items .small .item-title br {
+        display: none;
+    }
+    .banner-items .small .item-preprice {
+        margin-right: 0rem;
+        font-weight: normal;
+    }
+    .banner-items .small .item-price {
+        font-size: 10px;
+        margin-right: .2rem;
+    }
+    .banner-items .small .item-price span,
+    #ct-time .banner-items .small:nth-child(n+7) .item-price span {
+        font-size: 1.1rem;
+    }
+    #ct-time .banner-items .small:nth-child(n+7) {
+        width: 48.5%;
+        border: 3px solid #00B200;
+    }
+    #ct-time .banner-items .small:nth-child(n+7) .item-title {
+        font-size: 12px;
+    }
+    }
+
+/********** pick **********/
+#ct-pick .item {
+    padding-top: 5%;
+}
+#ct-pick .pop {
+    top: -5%;
+    right: -2%;
+}
+
+
+/********** ranking **********/
+#ct-ranking {
+}
+
+/********** corde **********/
+#ct-corde {
+    background-color: #FFF4F4;
+    margin-bottom: 5%;
+    padding-bottom: 3%;
+}
+#ct-corde .item {
+    padding-top: 5%;
+}
+#ct-corde .pop {
+    right: 0;
+    top: -10%;
+}
+@media screen and (max-width: 414px){
+#ct-corde .items3 div:first-child {
+    width: 60%;
+}
+#ct-corde .item {
+    width: 45%;
+    padding-top: 10%;
+    margin-bottom: 5%;
+}
+#ct-corde .pop {
+    top: -5%;
+}
+}
+
+/********** newarr **********/
+#ct-newarr {
+}
+.banner-newarr {
+    max-width: 945px;
+}
+.banner-newarr .new,.banner-newarr .arr {
+    width: 44%;
+    margin: 5% 2% 0;
+}
+.banner-newarr span {
+    color: #FB4689;
+    font-size: 120%;
+}
+@media screen and (max-width: 414px){
+.banner-newarr,
+.banner-newarr span {
+    font-size: 11px;
+}
+}
+
+/********** shun **********/
+#ct-shun {
+    margin-bottom: 8%;
+}
+#ct-shun .item {
+    padding-top: 10%;
+}
+#ct-shun .pop {
+    right: -8%;
+    top: 2%;
+}
+
+/********** sale **********/
+#ct-sale {
+}
+.if-pagesale iframe {
+    width: 945px;
+}
+@media screen and (max-width:414px){
+.if-pagesale iframe {
+    width: 360px;
+}
+}
+@media screen and (max-width:360px){
+.if-pagesale iframe {
+    width: 315px;
+}
+}
+
+/********** cate banner **********/
+#ct-cate {
+    margin: 0 auto 5%;
+}
+#ct-cate  .banner {
+    margin: 0 .5% 5%;
+    width: 49%;
+}
+#ct-cate p {
+    font-size: 1.2rem;
+}
+#ct-cate p span {
+    color: #FB4689;
+    font-size: 120%;
+}
+@media screen and (max-width:414px){
+#ct-cate {
+    width: 96%;
+}
+#ct-cate  .banner {
+    margin: 0 0 7%;
+    width: 100%;
+}
+#ct-cate p {
+    font-size: 12px;
+}
+}
+
+
+/* etc */
+.waku-color {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width:414px){
+.waku-color {
+    left: auto;
+    transform: none;
+}
+}
+
+/* css animation */
+.shine{
+    -webkit-animation:shine 1.5s ease-in-out infinite alternate;
+    -moz-animation:shine 1.5s ease-in-out infinite alternate;
+    animation:shine 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes shine{
+    0% {opacity:.1;}
+    100% {opacity:1;}
+}
+@-moz-keyframes shine{
+    0% {opacity:.1;}
+    100% {opacity:1;}
+}
+@keyframes shine{
+    0% {opacity:.1;}
+    100% {opacity:1;}
+}
+.blink{
+    -webkit-animation:blink .5s ease-in-out infinite alternate;
+    -moz-animation:blink .5s ease-in-out infinite alternate;
+    animation:blink .5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:.2;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:.2;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:.2;}
+    100% {opacity:1;}
+}
+.blink2{
+    -webkit-animation:blink2 .5s infinite alternate;
+    -moz-animation:blink2 .5s infinite alternate;
+    animation:blink2 .5s infinite alternate;
+}
+@-webkit-keyframes blink2{
+    0% {opacity:.2;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink2{
+    0% {opacity:.2;}
+    100% {opacity:1;}
+}
+@keyframes blink2{
+    0% {opacity:.2;}
+    100% {opacity:1;}
+}
+.sayu {
+    -webkit-animation-name:sayu;
+    -webkit-animation-duration:1s;
+    -webkit-animation-iteration-count:infinite;
+    /*-webkit-animation-direction:alternate;*/
+    -webkit-animation-timing-function:ease;
+
+    -moz-animation-name:sayu;
+    -moz-animation-duration:1s;
+    -moz-animation-iteration-count:infinite;
+    /*-moz-animation-direction:alternate;*/
+    -moz-animation-timing-function:ease;
+
+    animation:sayu 1s ease infinite alternate;
+}
+@-webkit-keyframes sayu {
+    0% {-webkit-transform:translate(0, 0);}
+    50% {-webkit-transform:translate(-22px, 0);}
+    100% {-webkit-transform:translate(0, 0);}
+}
+@-moz-keyframes sayu {
+    0% {-moz-transform:translate(0, 0);}
+    50% {-moz-transform:translate(-22px, 0);}
+    100% {-moz-transform:translate(0, 0);}
+}
+@keyframes sayu{
+    0% {transform:translate(0, 0);}
+    50% {transform:translate(-22px, 0);}
+    100% {transform:translate(0, 0);}
+}
+.joge {
+    -webkit-animation-name:joge;
+    -webkit-animation-duration:1s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease;
+
+    -moz-animation-name:joge;
+    -moz-animation-duration:1s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease;
+
+    animation:joge 1s ease infinite;
+}
+@-webkit-keyframes joge {
+    0% {-webkit-transform:translate(0, 0);}
+    50% {-webkit-transform:translate(0, -10px);}
+    100% {-webkit-transform:translate(0, 0);}
+}
+@-moz-keyframes joge {
+    0% {-moz-transform:translate(0, 0);}
+    50% {-moz-transform:translate(0, -10px);}
+    100% {-moz-transform:translate(0, 0);}
+}
+@keyframes joge{
+    0% {transform:translate(0, 0);}
+    50% {transform:translate(0, -10px);}
+    100% {transform:translate(0, 0);}
+}

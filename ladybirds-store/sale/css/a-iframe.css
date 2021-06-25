@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*====================================================================================
+ PC高さ調整★★★★★★毎日必要★★★★★★
+ ====================================================================================*/
+/* ▼▽▼ヘッダーインフォ掲載（掲載時はdisplay: block;掲載しないときはdisplay: none;）▼▽▼ */
+.head-info, .head-info iframe  {
+	 /*display: none;*/ 
+    /* height: 38px; */
+}
+/* ▼▽▼ヘッダー高さ調整SP看板▼▽▼ */
+/*105px ・ 205px(sp+FC)・300px(カウントダウンサイズ（180px）+SP) ・320px（マラソンSSのみ）・420px(マラソンSS + spサイズ) ・515px(マラソンSS + sp + FC)　685px(48時間限定ファションクーポン)*/
+/*.header-spsizebanner, .header-spsizebanner iframe {
+	height: 410px;11/20以降不使用
+}*/
+/* ▼▼▼ヘッダー高さ調整indexトップページ▼▼▼ */
+/*1510px(SP1段)・1600px(sp+FC)・1610px(sp+スライダー+sp)・1700px(カウントダウンサイズ（180px）+ SP) ・1720px(マラソンSSのみ)・1775px (マラソンSS + sp +fc)・1820px(マラソンSS + sp + info +fc) ・1910px(マラソン + sp + FC)・1950px(sp + マラソン + スライダー + sp)*/
+/*#header-index iframe {
+	max-width: none;
+	height: 1990px;11/20以降不使用
+}*/
+/* ▼▼▼ヘッダー高さ調整rms商品ページ▼▼▼ */
+#header, #header iframe {
+	height: 1300px;/*795px(SP1段)★・915px(sp+FC)★・1100px(カウントダウンサイズ（180px）+ SP)・1025px(マラソンSSのみ)・1030px(背景付きFC + sp)★・1105px(マラソンSS + sp)★・1195px(マラソンSS + sp + b945)★ ・1195px(sp + tb)★・ 1230px(sp+tb+カウントダウンサイズ)★・1315px?(マラソン + sp + FC) 1200px(マラソン +FC)!・1330px(マラソン+カウントダウン+b945+sp)★・1450px(マラソン+カウントダウン+FC+sp)・1550px(マラソン+カウントダウン+b945+sp+カウントダウン)★*/
+}
+
+/* ▼▼▼サイド高さ調整indexトップページ▼▼▼ */
+#left-pc .right iframe, #column, #column2 {
+	height: 13020px;
+}
+	/* ▼▼▼ロング★サイド高さ調整indexトップページ左帯微調整※※かならず上の数値より小さくなるように※※▼▼▼ */
+	#left-pc .left iframe {
+	height: 12540px;/*heightは短くて12080・長くて12540*/
+	}
+
+/* ▼▼▼サイド高さ調整rms商品ページ▼▼▼ */
+#side-left-rms .left iframe, #side-left-rms .right iframe, #side-left-rms {
+	height: 27650px!important;
+}
+
+
+/* ▼▼▼　★SOY投票ページ★　▼▼▼（掲載時はdisplay: block;掲載しないときはdisplay: none;）*/
+#kotei-b {display: none;}
+
+
+/* ▼▼▼　PC商品ページ買い物かご周り＆サイドピコピコ下の送料エリア　▼▼▼（掲載時はdisplay: block;掲載しないときはdisplay: none;）*/
+#floatingCartWidget .item-shipping-full-row,#displayShippingFeeContainer {display: block;}
+
+
+/*====================================================================================
+ m-pick-（表示非表示設定）※先頭の隠しタグ（/*）を外す ※※固定バナー左は#kotei-backsideと#kotei-lがかぶらないように表示させる※※
+ ====================================================================================*/
+/***** 固定バナー左帯 *****/
+/* #kotei-backside {display: none;} */
+/* #kotei-l {display: none;} */
+
+/***** 固定バナー右 *****/
+/*#kotei-r {display: none;}固定バナー右（ピコピコ）は基本的には削除しない*/
+
+
+/*==========================================
+ m-pick-
+ ==========================================*/
+#kotei-backside {
+    position: fixed !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+	z-index:999;
+}
+#kotei-backside iframe {
+	width: 120px;
+	height: 5000px;
+}
+#kotei-r {
+    position: fixed !important;
+    position: absolute;
+    bottom: 275px;/*通常ver.*/
+    /*bottom: 175px;*//*高さあるver.*/
+    right: 0;
+    width: 100%;
+	z-index:999999;
+	overflow: hidden;
+	text-align: center;
+	width: 120px;/* ピコピコのふきだしをだしたいときは220px通常は120px */
+}
+#kotei-r iframe {
+	width: 120px;/* ピコピコのふきだしをだしたいときは220px通常は120px */
+	height: 450px;/* ピコピコ左高さ 通常ver*/
+	/*height: 540px;*//*ピコピコ左高さ 高さあるver.*/
+}
+#kotei-r_s {
+    position: fixed !important;
+    position: absolute;
+    bottom: 300px;
+    right: 0;
+    width: 100%;
+	z-index:999999;
+	overflow: hidden;
+	text-align: center;
+	width: 140px;/* ピコピコのふきだしをだしたいときは220px通常は120px */
+}
+#kotei-r_s iframe {
+	width: 140px;/* ピコピコのふきだしをだしたいときは220px通常は120px */
+	height: 370px;/* ピコピコ左高さ */
+}
+#kotei-l {
+    position: fixed !important;
+    position: absolute;
+    top: 640px;
+    left: 0;
+    width: 100%;
+	z-index:999;
+	overflow: hidden;
+	text-align: center;
+	width: 120px;
+	display: none;
+}
+#kotei-l iframe {
+	width: 120px;
+	height: 170px;
+}
+#kotei-b {
+    position: fixed !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	z-index:999;
+	height: 92px;
+	overflow: hidden;
+	text-align: center;
+}
+#kotei-b iframe {
+	width: 100%;
+	max-width: 100%;
+}
+@media screen and (max-width: 945px){
+	#kotei-b iframe {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1200px){
+#kotei-r,#kotei-r_s, #kotei-l, #kotei-backside { display: none;}
+#kotei-b-sp {
+	display: inherit;
+    position: fixed!important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	z-index: 999;
+	height: 50px;
+	background: rgba(0,0,0,.7);
+}
+#kotei-b-sp iframe {
+	width: 100%;
+}
+}
+@media screen and (max-height: 820px){
+#kotei-backside, #kotei-r, #kotei-l {display: none;}
+}
+
+
+/* @media screen and (max-height: 820px){
+#left-pc .right iframe, #column, #column2 {
+}
+} */
+/* 上部固定ナビ */
+#rmskotei {
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	top:56px;
+	left:0;
+	z-index:99998!important;
+}
+#rmskotei iframe {
+	width: 100%;
+	height: 44px;
+}
+
+/*==========================================
+ m-pick-supersale201612
+ ==========================================*/
+#kotei-r-supersale {
+    position: fixed !important;
+    position: absolute;
+    bottom: 180px;
+    right: 0;
+    width: 100%;
+	z-index:999;
+	overflow: hidden;
+	text-align: center;
+	width: 130px;
+	width: 180px;
+}
+#kotei-r-supersale iframe {
+	width: 130px;
+	width: 180px;
+	height: 480px;/* ピコピコ左高さ */
+}
+
+#kotei-l-supersale {
+    position: fixed !important;
+    position: absolute;
+    bottom: 130px;
+    left: 85px;
+    width: 100%;
+	z-index:999;
+	overflow: hidden;
+	text-align: center;
+	width: 120px;
+}
+#kotei-l-supersale iframe {
+	width: 120px;
+	height: 650px;/* ピコピコ左高さ */
+}
+@media screen and (max-width: 1200px){
+#kotei-l-supersale, #kotei-r-supersale {display:none;}
+}
+@media screen and (max-height: 820px){
+#kotei-backside, #kotei-l-supersale, #kotei-r-supersale, #kotei-f {display: none;}
+}
+
+
+
+
+/*====================================================================================
+ その他（編集しない）
+ ====================================================================================*/
+#header-index iframe {
+	max-width: none;
+}
+#header {
+	max-width: none;
+}
+/*kotei*******************************************/
+.kotei {
+	position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+	z-index: 9999;
+	text-align: center;
+  	/*background: rgba(30,36,40,.9);*/
+	height: 44px;
+}
+.kotei iframe {
+	max-width: none;
+	width: 100%;
+	height: 44px;
+}
+/* layout */
+#header-index iframe {
+	min-width: 946px;
+}
+#header iframe {
+	max-width: none;
+}
+#header2 iframe {
+	max-width: none;
+}
+
+
+
+
+#side-left-rms {
+	position: relative;
+	width: 320px;
+}
+#side-left-rms .left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#side-left-rms .right {
+	position: absolute;
+	top: 0;
+	left: 130px;
+
+}
+
+@media screen and (max-width: 414px){
+.header-spsizebanner,
+.header-spsizebanner iframe,
+#header2 iframe,
+#header-pc {
+	display: none;
+}
+}
+#header-rms {
+	text-align: center;
+
+}
+#footer-rms {
+	width: 100%;
+	text-align: center;
+}

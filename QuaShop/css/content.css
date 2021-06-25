@@ -1,0 +1,303 @@
+.mainColumn3 {
+	position: relative;
+	display: inline-block;
+	width: 95%;
+	border-bottom: 1px solid #111;
+	background: none;
+	color: #111;
+	text-align: left;
+	font-family: 'Cantata One', serif;
+	font-size: 110%;
+	margin: 30px 10px 0 10px;
+	padding-bottom: 2px;
+	margin-bottom: 20px;
+}
+
+.mainColumn3 span.sub {
+	font-size: 60%;
+	margin-left: 10px;
+	font-weight: bold;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.rank_cat {
+	width: 96%;
+	margin: 0 auto;
+}
+
+h4 {
+	position: relative;
+	display: block;
+	padding: 0 20%;
+	text-align: center;
+	margin: 20px 0;
+	font-family: 'Noto Sans JP', sans-serif !important;
+	font-weight: 700;
+}
+
+h4:before,
+h4:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 20%;
+	height: 1px;
+	background-color: black;
+}
+
+h4:before {
+	left: 0;
+}
+
+h4:after {
+	right: 0;
+}
+
+
+
+/* ランキングコンテンツ */
+.ranking ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+}
+
+.ranking li {
+	margin-right: 1%;
+	position: relative;
+	width: 48%;
+	height: auto;
+	list-style: none;
+}
+
+
+.ranking li:nth-child(3),
+.ranking li:nth-child(4),
+.ranking li:nth-child(5) {
+	width: -webkit-calc((95% * 1/3));
+	width: calc((95% * 1/3));
+	margin: 1% height: auto;
+	list-style: none;
+}
+
+.ranking figure {
+	position: relative;
+	width: 100%;
+	/* トリミングしたい枠の幅（固定にしたい場合はサイズを入力） */
+	padding-top: 105%;
+	/* トリミングしたい枠の高さ（固定にしたい場合はサイズを入力） */
+	overflow: hidden;
+	/* 画像が枠からはみ出た部分はトリミング（非表示）する */
+	margin: 10px auto;
+}
+
+.ranking img {
+	/* 画像を上下左右に中央配置する（絶対指定） */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	/* 画像の最大サイズは枠の1.5倍まで */
+	max-width: 100%;
+	max-height: 130%;
+}
+
+.ranking figcaption {
+	padding-top: 12px;
+	font-size: 0.7rem;
+	color: #444;
+	text-align: center;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+.ranking li::before {
+	font-weight: 900;
+	position: absolute;
+
+}
+
+.ranking li:first-child::before {
+	content: '';
+	display: inline-block;
+	width: 85px;
+	height: 29px;
+	background-image: url(../images/content/rank_icon_no1.png);
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.ranking li:nth-child(2)::before {
+	content: '';
+	display: inline-block;
+	width: 85px;
+	height: 29px;
+	background-image: url(../images/content/rank_icon_no2.png);
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.ranking li:nth-child(3)::before {
+	content: '';
+	display: inline-block;
+	width: 85px;
+	height: 29px;
+	background-image: url(../images/content/rank_icon_no3.png);
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.ranking li:nth-child(4)::before {
+	content: "No.4";
+	color: #86bf93;
+	top: 5px;
+}
+
+.ranking li:nth-child(5)::before {
+	content: "No.5";
+	color: #86bf93;
+	top: 5px;
+}
+
+/* ランキングコンテンツ */
+
+
+/.cp_tab *,
+.cp_tab *:before,
+.cp_tab *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.cp_tab {
+	margin-left: 1%;
+}
+
+.cp_tab>input[type='radio'] {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+	appearance: none;
+	display: none;
+}
+
+.cp_tab .cp_tabpanel {
+	display: none;
+}
+
+.cp_tab>input:first-child:checked~.cp_tabpanels>.cp_tabpanel:first-child,
+.cp_tab>input:nth-child(3):checked~.cp_tabpanels>.cp_tabpanel:nth-child(2),
+.cp_tab>input:nth-child(5):checked~.cp_tabpanels>.cp_tabpanel:nth-child(3),
+.cp_tab>input:nth-child(7):checked~.cp_tabpanels>.cp_tabpanel:nth-child(4),
+.cp_tab>input:nth-child(9):checked~.cp_tabpanels>.cp_tabpanel:nth-child(5),
+.cp_tab>input:nth-child(11):checked~.cp_tabpanels>.cp_tabpanel:nth-child(6) {
+	display: block;
+}
+
+.cp_tab>label {
+	position: relative;
+	display: inline-block;
+	padding: 2px 0;
+	cursor: pointer;
+	border-bottom: 0;
+	background: #f2e6ec;
+	width: -webkit-calc((96% * 1/4));
+	width: calc((96% * 1/4));
+	text-align: center;
+	font-size: .8rem;
+}
+
+
+
+
+.cp_tab>label:hover,
+.cp_tab>input:focus+label {
+	background: #c40007;
+	color: #fff;
+}
+
+.cp_tab>input:checked+label {
+	margin-bottom: -1px;
+	border-color: #cccccc;
+	background: #c40007;
+	color: #fff;
+}
+
+.cp_tab .cp_tabpanel {
+	padding: 0.5em 1em;
+}
+
+@media (max-width: 480px) {
+	.cp_tab {
+		width: 100%;
+		font-size: 0.8em;
+	}
+
+	.cp_tab label {
+		padding: 0.5em;
+	}
+}
+
+
+@media screen and (max-width:600px) {
+
+	#ranking {
+		background: #f4f4f4;
+		padding-bottom: 20px;
+	}
+
+	p {
+		font-size: .5rem !important;
+	}
+
+	a p,
+	a p:last-child {
+		color: #000;
+		margin-left: 5.5em;
+	}
+
+	li::before {
+		font-size: 82%;
+	}
+
+	.ranking li:first-child::before {
+		content: '';
+		display: inline-block;
+		width: 59px;
+		height: 20px;
+		background-image: url(static/image/rank_icon_no1.png);
+		background-size: contain;
+		vertical-align: middle;
+	}
+
+	.ranking li:nth-child(2)::before {
+		content: '';
+		display: inline-block;
+		width: 59px;
+		height: 20px;
+		background-image: url(static/image/rank_icon_no2.png);
+		background-size: contain;
+		vertical-align: middle;
+	}
+
+	.ranking li:nth-child(3)::before {
+		content: '';
+		display: inline-block;
+		width: 59px;
+		height: 20px;
+		background-image: url(static/image/rank_icon_no3.png);
+		background-size: contain;
+		vertical-align: middle;
+	}

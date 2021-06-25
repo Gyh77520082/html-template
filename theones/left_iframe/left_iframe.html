@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<link rel="stylesheet" type="text/css" href="css/bloc2015.css" media="all">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<!-- 引入样式 -->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		
+	</head>
+	<style type="text/css">
+		h2.sidebar_title {
+			font-size: 1.5rem;
+			display: inline-block;
+		}
+		a{
+			text-decoration: none;
+			color: #000000;
+		}
+	
+	</style>
+	<body>
+		<div class="sideBnr">
+			<h2 class="n06">
+				<span>SEARCH</span>
+			</h2>
+			<iframe style=" float:left;" src="../l_search/l_search.html" name="flash" width="202px" height="80" frameborder="0"
+			 scrolling="no"></iframe>
+		</div>
+		<h2 class="sidebar_title">Category<span>商品カテゴリー</span></h2>
+		<!--首页分类设置-->
+		<ul class="side_cat" style="padding: 0;background: #FFFFFF;">
+			<div id="app">
+				<el-row class="tac">
+					<el-col :span="12" style="width: 202px;">
+						<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
+							<el-submenu index="1">
+								<template slot="title">
+									<span>トップス</span>
+								</template>
+								<el-menu-item-group>
+									<el-submenu index="1-1">
+								        <template slot="title">Tシャツ</template>
+								        <el-menu-item index="1-1-1">
+											<a href="https://search.rakuten.co.jp/search/mall/T%E3%82%B7%E3%83%A3%E3%83%84+%E9%95%B7%E8%A2%96/?s=4&sid=379052" target="_blank">長袖</a>
+										</el-menu-item>
+										<el-menu-item index="1-1-2">
+											<a href="https://search.rakuten.co.jp/search/mall/T%E3%82%B7%E3%83%A3%E3%83%84+%E5%8D%8A%E8%A2%96/?s=4&sid=379052" target="_blank">半袖</a>
+										</el-menu-item>
+									</el-submenu>
+									<el-menu-item index="1-2"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B8%E3%83%A3%E3%82%B1%E3%83%83%E3%83%88/-/tg5002043/?s=4&sid=379052" target="_blank">ジャケット</a></el-menu-item>
+									<el-menu-item index="1-3"><a href="https://search.rakuten.co.jp/search/mall/%E3%83%8B%E3%83%83%E3%83%88%E3%82%BB%E3%83%BC%E3%82%BF%E3%83%BC/?s=4&sid=379052" target="_blank">ニット、セーター</a></el-menu-item>
+									<el-menu-item index="1-4"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%83%A3%E3%83%84/?s=4&sid=379052" target="_blank">シャツ</a></el-menu-item>
+									<el-menu-item index="1-5"><a href="https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%83%BC%E3%82%AB%E3%83%BC/?s=4&sid=379052" target="_blank">パーカー</a></el-menu-item>
+									<el-menu-item index="1-6"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%AB%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AC%E3%83%B3/?s=4&sid=379052" target="_blank">カーディガン</a></el-menu-item>
+								</el-menu-item-group>
+							</el-submenu>
+							<el-submenu index="2">
+								<template slot="title">
+									<span>コート</span>
+								</template>
+								<el-menu-item-group>
+									<el-menu-item index="2-1"><a href="https://search.rakuten.co.jp/search/mall/%E4%B8%AD%E7%B6%BF%E3%82%B3%E3%83%BC%E3%83%88/?s=4&sid=379052" target="_blank">中綿コート</a></el-menu-item>
+									<el-menu-item index="2-2"><a href="https://search.rakuten.co.jp/search/mall/%E3%83%81%E3%82%A7%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%88/?s=4&sid=379052" target="_blank">チェスターコート</a></el-menu-item>
+								</el-menu-item-group>
+							</el-submenu>
+							<el-submenu index="3">
+								<template slot="title">
+									<span>ボトムス</span>
+								</template>
+								<el-menu-item-group>
+									<el-menu-item index="3-1"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%AB%E3%83%BC%E3%82%B4%E3%83%91%E3%83%B3%E3%83%84/?s=4&sid=379052" target="_blank">カーゴパンツ</a></el-menu-item>
+									<el-menu-item index="3-2"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B8%E3%83%BC%E3%83%B3%E3%82%BA/?s=4&sid=379052" target="_blank">ジーンズ</a></el-menu-item>
+									<el-menu-item index="3-3"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%82%A6%E3%82%A7%E3%83%83%E3%83%88%E3%83%91%E3%83%B3%E3%83%84/?s=4&sid=379052" target="_blank">スウェットパンツ</a></el-menu-item>
+									<el-menu-item index="3-4"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%AB%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%91%E3%83%B3%E3%83%84/?s=4&sid=379052" target="_blank">カジュアルパンツ</a></el-menu-item>
+									<el-menu-item index="3-5"><a href="https://search.rakuten.co.jp/search/mall/%E3%83%9C%E3%82%AF%E3%82%B5%E3%83%BC%E3%83%91%E3%83%B3%E3%83%84/?s=4&sid=379052" target="_blank">ボクサーパンツ</a></el-menu-item>
+									<el-menu-item index="3-6"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%82%AA%E3%83%BC%E3%83%AB/?s=4&sid=379052" target="_blank">オーバーオール</a></el-menu-item>
+								</el-menu-item-group>
+							</el-submenu>
+							<el-submenu index="4">
+								<template slot="title">
+									<span>セットアップ</span>
+								</template>
+								<el-menu-item-group>
+									<el-menu-item index="4-1"><a href="https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%82%B8%E3%83%A3%E3%83%9E/-/tg5002043/?s=4&sid=379052" target="_blank">パジャマ</a></el-menu-item>
+									<el-menu-item index="4-1"><a href="https://search.rakuten.co.jp/search/mall/%E6%B0%B4%E7%9D%80/-/tg5002043/?s=4&sid=379052" target="_blank">水着</a></el-menu-item>
+									<el-menu-item index="4-1"><a href="https://search.rakuten.co.jp/search/mall/%E7%9D%80%E7%89%A9/-/tg5002043/?s=4&sid=379052" target="_blank">着物</a></el-menu-item>
+									<el-menu-item index="4-2"><a href="https://search.rakuten.co.jp/search/mall/%E3%83%8D%E3%82%AF%E3%82%BF%E3%82%A4/?s=4&sid=379052" target="_blank">ネクタイ</a></el-menu-item>
+									<el-menu-item index="4-3"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%BC%E3%83%84/-/tg5002043/?s=4&sid=379052" target="_blank">スーツ</a></el-menu-item>
+									<el-menu-item index="4-4"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97/-/tg5002043/?s=4&sid=379052" target="_blank">普段着</a></el-menu-item>
+								</el-menu-item-group>
+							</el-submenu>
+							<el-submenu index="5">
+								<template slot="title">
+									<span>レディースファッション</span>
+								</template>
+								<el-menu-item-group>
+									<el-submenu index="5-1">
+								        <template slot="title">セットアップ</template>
+								        <el-menu-item index="5-1-1">
+											<a href="https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%82%B8%E3%83%A3%E3%83%9E/-/tg5002044/?s=4&sid=379052" target="_blank"> パジャマ</a>
+										</el-menu-item>
+										<el-menu-item index="5-1-1">
+											<a href="https://search.rakuten.co.jp/search/mall/%E6%B0%B4%E7%9D%80/-/tg5002044/?s=4&sid=379052" target="_blank"> 水着</a>
+										</el-menu-item>
+										<el-menu-item index="5-1-1">
+											<a href="https://search.rakuten.co.jp/search/mall/+%E7%9D%80%E7%89%A9/-/tg5002044/?s=4&sid=379052" target="_blank"> 着物</a>
+										</el-menu-item>
+										<el-menu-item index="5-1-2">
+											<a href="https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%BC%E3%83%84/-/tg5002044/?s=4&sid=379052" target="_blank"> スーツ</a>
+										</el-menu-item>
+									</el-submenu>
+									<el-menu-item index="5-2"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B8%E3%83%A3%E3%82%B1%E3%83%83%E3%83%88/-/tg5002044/?s=4&sid=379052" target="_blank">ジャケット</a></el-menu-item>
+								</el-menu-item-group>
+							</el-submenu>
+							<el-submenu index="6">
+								<template slot="title">
+									<span>キッズ</span>
+								</template>
+									<el-menu-item index="6-1"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%AD%E3%83%83%E3%82%BA/?s=4&sid=379052" target="_blank"> セットアップ </a></el-menu-item>
+								</el-menu-item-group>
+							</el-submenu>
+							<el-submenu index="7">
+								<template slot="title">
+									<span>靴</span>
+								</template>
+								</template>
+								<el-menu-item-group>
+									<el-menu-item index="7-1"><a href="hhttps://search.rakuten.co.jp/search/mall/%E9%9D%B4/-/tg5002043/?s=4&sid=379052" target="_blank">メンズ</a></el-menu-item>
+									<el-menu-item index="7-2"><a href="https://search.rakuten.co.jp/search/mall/%E9%9D%B4/-/tg5002044/?s=4&sid=379052" target="_blank">レディース</a></el-menu-item>
+									<el-menu-item index="7-1"><a href="https://search.rakuten.co.jp/search/mall/%E3%83%95%E3%82%A3%E3%83%83%E3%83%88%E3%83%8D%E3%82%B9%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA/?s=4&sid=379052" target="_blank">フィットネスシューズ</a></el-menu-item>
+								</el-menu-item-group>
+							</el-submenu>
+							<el-submenu index="8">
+								<template slot="title">
+									<span>雑貨.家電 </span>
+								</template>
+								</template>
+								<el-menu-item-group>
+									<el-menu-item index="7-6"><a href="https://search.rakuten.co.jp/search/mall/%E4%BA%8C%E9%85%B8%E5%8C%96%E7%82%AD%E7%B4%A0%E6%BF%83%E5%BA%A6%E8%A8%88/?s=4&sid=379052" target="_blank">二酸化炭素濃度計</a></el-menu-item>
+									<el-menu-item-group>
+										<el-menu-item-group>
+									<el-menu-item index="7-6"><a href="https://search.rakuten.co.jp/search/mall/%E4%BA%8C%E9%85%B8%E5%8C%96%E7%82%AD%E7%B4%A0%E6%BF%83%E5%BA%A6%E8%A8%88/?s=4&sid=379052" target="_blank">空調服</a></el-menu-item>
+										<el-menu-item-group>
+									<el-menu-item index="7-6"><a href="https://search.rakuten.co.jp/search/mall/%E7%81%B0%E7%9A%BF/?s=4&sid=379052" target="_blank">灰皿</a></el-menu-item>
+										<el-menu-item-group>
+									<el-menu-item index="7-6"><a href="https://search.rakuten.co.jp/search/mall/%E5%B8%BD%E5%AD%90/?s=4&sid=379052" target="_blank">帽子</a></el-menu-item>
+									<el-menu-item-group>
+											<el-menu-item-group>
+									<el-menu-item index="7-6"><a href="https://search.rakuten.co.jp/search/mall/%E6%99%82%E8%A8%88/?s=4&sid=379052" target="_blank">時計</a></el-menu-item>
+									<el-menu-item-group>
+									<el-menu-item index="7-7"><a href="https://search.rakuten.co.jp/search/mall/%E8%B2%A1%E5%B8%83/?s=4&sid=379052" target="_blank">財布</a></el-menu-item>
+								<el-menu-item-group>
+									<el-menu-item index="7-1"><a href="https://search.rakuten.co.jp/search/mall/%E3%83%9E%E3%82%B9%E3%82%AF/?s=4&sid=379052" target="_blank">マスク</a></el-menu-item>
+									<el-menu-item index="7-4"><a href="https://search.rakuten.co.jp/search/mall/%E5%82%98/?s=4&sid=379052" target="_blank">傘</a></el-menu-item>
+									<el-menu-item index="7-4"><a href="https://search.rakuten.co.jp/search/mall/%E3%83%90%E3%83%83%E3%82%B0/?s=4&sid=379052" target="_blank">バッグ</a></el-menu-item>
+									<el-menu-item index="7-2"><a href="https://search.rakuten.co.jp/search/mall/UV+%E9%99%A4%E8%8F%8C%E3%82%B1%E3%83%BC%E3%82%B9/?s=4&sid=379052" target="_blank">UV 除菌ケース</a></el-menu-item>
+									<el-menu-item index="7-3"><a href="https://search.rakuten.co.jp/search/mall/%E4%BF%9D%E8%AD%B7/?s=4&sid=379052" target="_blank">保護マスク＆メガネ</a></el-menu-item>
+									<el-menu-item index="7-4"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B5%E3%83%B3%E3%82%B0%E3%83%A9%E3%82%B9/?s=4&sid=379052" target="_blank">サングラス</a></el-menu-item>
+									<el-menu-item index="7-5"><a href="https://search.rakuten.co.jp/search/mall/%E7%A6%8F%E8%A2%8B/?s=4&sid=379052" target="_blank">福袋</a></el-menu-item>
+								</el-menu-item-group>
+							</el-submenu>
+							
+							
+							
+							
+						</el-menu>
+					</el-col>
+				</el-row>
+			</div>
+			<script src="js/vue-2.6.12.js"></script>
+			<!-- 引入组件库 -->
+			<script src="js/element_ui.js"></script>
+			<script>
+				var Main = {
+					methods: {
+						handleOpen(key, keyPath) {
+							console.log(key, keyPath);
+						},
+						handleClose(key, keyPath) {
+							console.log(key, keyPath);
+						}
+					}
+				}
+				var Ctor = Vue.extend(Main)
+				new Ctor().$mount('#app')
+			</script>
+		</ul>
+		<iframe style=" float:left;" src="../ranking/ranking.html" name="flash" width="202px" height="3200" frameborder="0"
+		 scrolling="no"></iframe>
+	</body>
+</html>

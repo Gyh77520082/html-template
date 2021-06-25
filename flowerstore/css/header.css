@@ -1,0 +1,155 @@
+
+			.border_s1{padding:2px;border:1px solid #e7e5e6;}
+#mail_cal{
+  height: 600px;
+}
+#show_img1{
+  overflow: auto;
+}
+#show_img1 li{
+  float: left;
+  width: 18%;
+  padding-left: calc(10%/6)
+}
+#show_img1 li img{
+  width: 100%;
+}
+.product{
+  width: 100%;
+}
+.product ul{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.product li{
+   /*float: left;*/
+   width: 30%;
+
+}
+.product li img{
+  display: block;
+  width: 100%;
+}
+#rakuten_nav ul{
+  display: flex;
+}
+@media (max-width: 767px) {
+  #show_img1 li:nth-child(2n+1){
+    clear:both;
+}
+#rakuten_nav{
+  width: 100%;
+  text-align: center;
+}
+#rakuten_nav li{
+  padding:0;
+}
+#rakuten_nav li:first-child{
+  padding-right: 0;
+}
+}
+@media (min-width: 800px) {
+  #show_img1 li:nth-child(5n+1){
+  clear:both;
+}
+
+}
+
+@media (max-width: 767px) {
+  #show_img1 p{
+    font-size: 0.8em !important;
+  }
+  #g-nav{
+  	display: none;
+  }
+  .navbar-toggle{
+	  display: none;
+  }
+  #mail_cal{
+  height: 202px;
+}
+#show_img1{
+  width: 100%;
+}
+#show_img1 li{
+  width: 45%;
+  padding-left: calc(10%/3);
+}
+#show_img1 li img{
+  width: 100%;
+}
+.product li{
+   /*float: left;*/
+   width: 100%;
+
+}
+#g-nav{
+  position: relative;
+  height: auto;
+  padding:0;
+}
+#g-nav ul{
+  position: absolute;
+  left: 40px;
+}
+#g-nav li{
+  float: none;
+  padding-left: 0;
+  width: 146px;
+}
+ #g-nav li img{
+  display: block;
+}
+/* #g-nav li ul{
+  top: 8px;
+  left: 143px;
+} */
+}
+@media (max-width: 380px) {
+  #mail_cal{
+    height: 185px;
+  }
+}
+@media (max-width: 360px) {
+  #mail_cal{
+    height: 158px;
+  }
+}
+.bs-docs-nav .navbar-header .navbar-toggle{
+  border-color: #fff;
+}
+.navbar-toggle {
+    position: relative;
+    float: left;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.navbar-toggle .icon-bar {
+    background-color: #563d7c;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}

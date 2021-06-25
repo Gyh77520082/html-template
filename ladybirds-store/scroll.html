@@ -1,0 +1,168 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+		<meta http-equiv="content-style-type" content="text/css">
+		<meta http-equiv="content-script-type" content="text/javascript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/slidshowcommon.css">
+		<link rel="stylesheet" type="text/css" href="css/slidshowbase.css">
+		<link rel="stylesheet" type="text/css" href="css/socll.css" />
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#carousel').each(function() {
+					var slideTime = 300;
+					var delayTime = 3000;
+					var carouselWidth = $(this).width();
+					var carouselHeight = $(this).height();
+					$(this).append('<div id="carousel_prev"></div><div id="carousel_next"></div>');
+					$(this).children('ul').wrapAll('<div id="carousel_wrap"><div id="carousel_move"></div></div>');
+					$('#carousel_wrap').css({
+						width: (carouselWidth),
+						height: (carouselHeight),
+						position: 'relative',
+						overflow: 'hidden'
+					});
+
+					var listWidth = parseInt($('#carousel_move').children('ul').children('li').css('width'));
+					var listCount = $('#carousel_move').children('ul').children('li').length;
+
+					var ulWidth = (listWidth) * (listCount);
+
+					$('#carousel_move').css({
+						top: '0',
+						left: -(ulWidth),
+						width: ((ulWidth) * 3),
+						height: (carouselHeight),
+						position: 'absolute'
+					});
+
+					$('#carousel_wrap ul').css({
+						width: (ulWidth),
+						float: 'left'
+					});
+					$('#carousel_wrap ul').each(function() {
+						$(this).clone().prependTo('#carousel_move');
+						$(this).clone().appendTo('#carousel_move');
+					});
+
+					carouselPosition();
+
+					$('#carousel_prev').click(function() {
+						clearInterval(setTimer);
+						$('#carousel_move:not(:animated)').animate({
+							left: '+=' + (listWidth)
+						}, slideTime, function() {
+							carouselPosition();
+						});
+						timer();
+					});
+
+					$('#carousel_next').click(function() {
+						clearInterval(setTimer);
+						$('#carousel_move:not(:animated)').animate({
+							left: '-=' + (listWidth)
+						}, slideTime, function() {
+							carouselPosition();
+						});
+						timer();
+					});
+
+					function carouselPosition() {
+						var ulLeft = parseInt($('#carousel_move').css('left'));
+						var maskWidth = (carouselWidth) - ((listWidth) * (listCount));
+						if (ulLeft == ((-(ulWidth)) * 2)) {
+							$('#carousel_move').css({
+								left: -(ulWidth)
+							});
+						} else if (ulLeft == 0) {
+							$('#carousel_move').css({
+								left: -(ulWidth)
+							});
+						};
+					};
+
+					timer();
+
+					function timer() {
+						setTimer = setInterval(function() {
+							$('#carousel_next').click();
+						}, delayTime);
+					};
+
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container" style="margin-top:0px;">
+			<div id="carousel">
+				<ul>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/a5b7a5e5a1.html" target="_top">
+							<img src="images/scroll/scroll190308_19lookbook_950.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/" target="_top">
+							<img src="images/scroll/scroll2019summer_950x633.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/" target="_top">
+							<img src="images/scroll/scroll19ss-tshirts-950x633.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/" target="_top">
+							<img src="images/scroll/scroll19ss-scutts-950x633.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/cab2a35a55b.html" target="_top">
+							<img src="images/scroll/scroll19ss-hpants-950x633.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/a5efa5f3a5.html" target="_top">
+							<img src="images/scroll/scroll19ss-onepiece-950x633.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/cbb9bbd2a1.html" target="_top">
+							<img src="images/scroll/scroll19ss_girls_950.jpg" border="0"></a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/3a25a5b5cba.html?X=99#CentSrchFilter1" target="_top">
+							<img src="images/scroll/scroll19ss_baby_950.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/" target="_top">
+							<img src="images/scroll/scroll19ss-lpants-950x633.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/clll088.html" target="_top">
+							<img src="images/scroll/scroll18a-4_950.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/a5d9a5d3a1.html" target="_top">
+							<img src="images/scroll/scroll18a-2_950.jpg" border="0">
+						</a>
+					</li>
+					<li>
+						<a href="https://store.shopping.yahoo.co.jp/ladybirds-store/search.html?p=%E8%A2%B4#CentSrchFilter1" target="_top">
+							<img src="images/scroll/scroll181029_sports_950.jpg" border="0">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+	</body>
+</html>

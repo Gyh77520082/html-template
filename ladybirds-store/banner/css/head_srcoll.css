@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+/* CSS Document */
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+iframe {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fff;
+	line-height: 24px;
+	color: #333333;
+	font-size: 12px;
+	font-family: "ＭＳ Ｐゴシック";
+	-webkit-text-size-adjust: none;
+	font-family: "メイリオ", "Meiryo";
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+	padding: 0px 0 0 0;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #333;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.fr1 {
+	float: right;
+	padding: 3px 0 0 0;
+}
+
+.clear {
+	clear: both;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+.blank10 {
+	line-height: 10px;
+	height: 10px;
+	clear: both;
+	overflow: hidden;
+}
+
+.blank15 {
+	line-height: 15px;
+	height: 15px;
+	clear: both;
+	overflow: hidden;
+}
+
+.blank20 {
+	line-height: 20px;
+	height: 20px;
+	clear: both;
+	overflow: hidden;
+}
+
+.blank25 {
+	line-height: 25px;
+	height: 25px;
+	clear: both;
+	overflow: hidden;
+}
+
+.blank30 {
+	line-height: 30px;
+	height: 30px;
+	clear: both;
+	overflow: hidden;
+}
+
+.blank40 {
+	line-height: 40px;
+	height: 40px;
+	clear: both;
+	overflow: hidden;
+}
+
+.blank45 {
+	line-height: 45px;
+	height: 45px;
+	clear: both;
+	overflow: hidden;
+}
+
+.blank50 {
+	line-height: 50px;
+	height: 50px;
+	clear: both;
+	overflow: hidden;
+}
+
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#title_hr {
+	margin-bottom: 8px;
+}
+
+.slider-box {
+	height: 230px;
+	width: 1050px;
+	border: 0px solid #181818;
+	position: relative;
+	margin: 0 auto;
+	padding: 0px 0 20px;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.slider-box .hd {
+	overflow: hidden;
+	/* height: 30px; */
+	/* background: #f4f4f4; */
+	width: 100%;
+	padding: 0;
+	position: absolute;
+	height: 250px;
+}
+
+.slider-box .hd .prev {
+	height: 80%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 35px;
+	background: #ececec url(../images/ico_bg.gif);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	background-position: -145px 85px;
+	cursor: pointer;
+	-moz-border-radius: 6px 0px 0px 6px;
+	-khtml-border-radius: 6px 0px 0px 6px;
+	-webkit-border-radius: 6px 0px 0px 6px;
+	border-radius: 6px 0px 0px 6px;
+}
+
+.slider-box .hd .prev:hover {
+	background-position: -38px 85px;
+}
+
+.tempWrap {
+	margin-left: 0px;
+	width: 940px !important;
+	margin-top: 20px;
+}
+
+.slider-box .hd .next {
+	height: 80%;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	width: 35px;
+	background: #ececec url(../images/ico_bg.gif);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	background-position: -95px 85px;
+	cursor: pointer;
+	-moz-border-radius: 0 6px 6px 0;
+	-khtml-border-radius: 0 6px 6px 0;
+	-webkit-border-radius: 0 6px 6px 0;
+	border-radius: 0 6px 6px 0;
+}
+
+.slider-box .hd .next:hover {
+	background-position: 5px 85px;
+}
+
+.slider-box .hd .prevStop {
+	background-position: -60px 0;
+}
+
+.slider-box .hd .nextStop {
+	background-position: -60px -50px;
+}
+
+.slider-box .hd ul {
+	float: right;
+	overflow: hidden;
+	zoom: 1;
+	margin-top: 10px;
+	zoom: 1;
+}
+
+.slider-box .hd ul li {
+	float: left;
+	width: 9px;
+	height: 9px;
+	overflow: hidden;
+	margin-right: 5px;
+	text-indent: -999px;
+	cursor: pointer;
+	background: url("images/icoCircle.gif") 0 -9px no-repeat;
+}
+
+.slider-box .hd ul li.on {
+	background-position: 0 0;
+}
+
+.slider-box .bd li {
+	width: 100%;
+	float: left;
+	width: 150px;
+	margin: 0 47px 0 0;
+	list-style-type: none;
+}
+
+.slider-box .bd li a {
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+.slider-box .bd li img {
+	max-height: 150px;
+	max-width: 150px;
+	display: block;
+}
+
+
+
+.slider-box .bd li .new {
+	background: url(img/header/201608head_scroll_item/NEW.gif) no-repeat;
+	width: 150px;
+	height: 22px;
+	display: block;
+}
+
+.slider-box .bd li .hot {
+	background: url(img/header/201608head_scroll_item/HOT.gif) no-repeat;
+	width: 150px;
+	height: 22px;
+	display: block;
+}
+
+
+
+.slider-box {
+	font-family: "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", MS PGothic, sans-serif;
+}
+
+.slider-wrapper01 {
+	position: relative;
+	box-shadow: 0 0 black;
+	display: block;
+	z-index: 9999999999;
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+.slider-box .one {
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+	color: #777;
+	line-height: 180%;
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}
+
+.slider-box .sprice {
+	color: #F7362D;
+	font-size: 14px;
+	font-weight: 100;
+	padding: 0;
+	margin: 0;
+	display: block;
+	margin-bottom: 5px;
+}
+
+
+.slider-wrapper01 span {
+	font-size: 12px;
+	line-height: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 20px;
+	margin: 4px 0 0;
+	text-align: center;
+	color: #fff;
+	border-radius: 100px;
+	background-color: #f72d2d;
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: left;
+}
+
+.slider-wrapper01 .ico {
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 21px;
+	height: 28px;
+	color: #666;
+	display: block;
+	width: 45px;
+	padding-left: 30px;
+	font-style: inherit;
+	text-transform: uppercase;
+	background: url(../images/ico4.jpg) no-repeat 0 0;
+}
+
+.slider-wrapper01 li:nth-of-type(1) .ico {
+	background: url(../images/ico1.jpg) no-repeat 0 0;
+}
+
+.slider-wrapper01 li:nth-of-type(2) .ico {
+	background: url(../images/ico2.jpg) no-repeat 0 0;
+}
+
+.slider-wrapper01 li:nth-of-type(3) .ico {
+	background: url(../images/ico3.jpg) no-repeat 0 0;
+}
+
+.pageState {
+	display: none;
+}

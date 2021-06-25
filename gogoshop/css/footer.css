@@ -1,0 +1,89 @@
+div#skpfooter {
+	width: 100%;
+	text-align: center;
+}
+
+#skpft,
+#skpft table,
+#skpft th,
+#skpft tr,
+#skpft td {
+	padding: 0;
+	margin: 0;
+}
+
+#skpft img {
+	border: none;
+}
+
+#skpft {
+	width: 100%;
+	border: solid 1px #F9D98C;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#skpft tr th div {
+	margin: -1px -1px 0;
+	text-align: center;
+}
+
+#skpft td {
+	padding: 3px 0;
+}
+
+#skpft td,
+#skpft #skpfttable td {
+	background-color: #FFFFFF;
+}
+
+#skpft #skpfttable {
+	border: none;
+	width: 100%;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 9px 5px;
+}
+
+#skpft #skpfttable th,
+#skpft #skpfttable td {
+	width: 50%;
+	text-align: left;
+}
+
+#skpft #skpfttable th {
+	background-color:
+		#FEED9F;
+	font-weight: bold;
+	color: #FF7C00;
+	font-size: 14px;
+	padding: 5px 10px;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+#skpft #skpfttable th img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+#skpft #skpfttable td {
+	color: #464241;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+#skpft #skpfttable td p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#skpft #skpfttable td img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.font_textleft{
+	text-align: left;
+}
+

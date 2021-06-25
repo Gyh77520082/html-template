@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>seach</title>
+		<link rel="stylesheet" href="css/seach.css">
+	</head>
+	<body onload="Form_Load()">
+		<div id="search_container">
+			<form action="https://store.shopping.yahoo.co.jp/lzgp/search.html" method="get" name="searchForm" target="_top">
+				<div>
+					<i class="fa fa-search" aria-hidden="true"></i>
+					<input class="text" type="text" placeholder="商品を探す" value="" name="p" onkeydown="ClearButton_KeyDown()">
+					<i class="fa fa-times-circle clearButton" aria-hidden="true" id="clear_button" onclick="ClearButton_Click()"></i>
+					<input value="検索" type="submit">
+				</div>
+			</form>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		function Form_Load() {
+			if (this.searchForm.p.value.length > 0) {
+				target = document.getElementById("clear_button");
+				target.style.visibility = "visible";
+			}
+		}
+
+		function ClearButton_Click() {
+			this.searchForm.p.value = "";
+			this.searchForm.p.focus();
+
+			target = document.getElementById("clear_button");
+			target.style.visibility = "hidden";
+		}
+
+		function ClearButton_KeyDown() {
+			target = document.getElementById("clear_button");
+			target.style.visibility = "visible";
+		}
+	</script>
+</html>

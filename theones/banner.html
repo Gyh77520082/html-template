@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="./css/swiper.min.css">
+		<script src="./js/swiper.min.js"></script>
+	</head>
+	<body>
+		<style type="text/css">
+			.mainSlider.banner {
+				left: 15%;
+			}
+
+			.mainSlider.banner {
+				right: 15%;
+			}
+
+			.mainSlider.banner {
+				max-width: 1080px;
+				margin: 0 auto;
+			}
+
+			.mainSlider.banner ul {
+				padding: 0;
+			}
+
+			.mainSlider.banner img {
+				width: 100%;
+			}
+
+			@media (max-width: 768px) {
+
+				.swiper-button-next,
+				.swiper-button-prev {
+					display: none;
+				}
+		</style>
+		<div class="mainSlider banner">
+			<ul class="slider slick-initialized slick-slider slick-dotted">
+				<div class="swiper-container2" style="width:100%;margin: 0 auto;overflow: hidden;">
+					<div class="swiper-wrapper">
+						
+						  <li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E7%A9%BA%E8%AA%BF%E6%9C%8D/?sid=379052" target="_blank"
+							 tabindex="0"><img src="./images/lb17.jpg" alt=""></a>
+						</li>
+						<li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E3%83%95%E3%82%A3%E3%83%83%E3%83%88%E3%83%8D%E3%82%B9%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA/?sid=379052" target="_blank"
+							 tabindex="0"><img src="./images/rg.jpg" alt=""></a>
+						</li>
+						  <li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://item.rakuten.co.jp/thones/c/0000000122/?s=4#risFil" target="_blank"
+							 tabindex="0"><img src="./images/lb16.jpg" alt=""></a>
+						</li>
+						<li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E3%82%B5%E3%83%AB%E3%82%A8%E3%83%AB%E3%83%91%E3%83%B3%E3%83%84/?sid=379052"
+							 target="_blank" tabindex="0"><img src="./images/lb13.jpg" alt=""></a>
+						</li>
+                         <li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%BC%E3%83%84/?s=4&sid=379052" target="_blank"
+							 tabindex="0"><img src="./images/lb15.jpg" alt=""></a>
+						</li>
+						<li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E9%9D%B4/?s=4&sid=379052" target="_blank" tabindex="0"><img
+								 src="./images/lb12.jpg"></a>
+						</li>
+						<li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97/?sid=379052"
+							 target="_blank" tabindex="0"><img src="./images/lb2.jpg"></a>
+						</li>
+						<li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%82%B8%E3%83%A3%E3%83%9E/?sid=379052" target="_blank"
+							 tabindex="0"><img src="./images/lb7.jpg" alt=""></a>
+						</li>						
+						<li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E3%83%9E%E3%82%B9%E3%82%AF/?sid=379052" target="_blank"
+							 tabindex="0"><img src="./images/lb5.jpg" alt=""></a>
+						</li>
+						<li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/T%E3%82%B7%E3%83%A3%E3%83%84/?sid=379052" target="_blank"
+							 tabindex="0"><img src="./images/lb14.jpg"></a>
+						</li>											
+						<li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E3%82%B8%E3%83%BC%E3%83%B3%E3%82%BA/?sid=379052" target="_blank"
+							 tabindex="0"><img src="./images/lb4.jpg" alt=""></a>
+						</li>
+						
+						<li class="swiper-slide" style="width: 100%; display: inline-block;">
+							<a href="https://search.rakuten.co.jp/search/mall/%E3%83%9E%E3%82%B9%E3%82%AF/?sid=379052" target="_blank"
+							 tabindex="0"><img src="./images/lb6.jpg" alt=""></a>
+						</li>
+
+
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</ul>
+		</div>
+	</body>
+	<script>
+		window.onload = function() {
+			var mySwiper = new Swiper('.swiper-container2', {
+				direction: 'horizontal',
+				loop: true,
+				speed: 300,
+				autoplay: {
+					delay: 3000
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			})
+		}
+	</script>
+</html>

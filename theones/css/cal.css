@@ -1,0 +1,125 @@
+div.cal_wrapper {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.cal_wrapper table.cal:first-of-type {
+	margin: 0 10px 0 0;
+}
+
+div.cal_wrapper table.cal tr th p {
+	float: left;
+	padding: 5px 0 5px;
+	margin: 0px;
+	color: #555;
+	font-size: 13px;
+}
+
+/*  不要
+div.cal_wrapper table.cal tr th div.cal_ui {
+	float: right;
+}
+-----------------------------------------------------------------*/
+#cal0 .cal_ui,
+#cal1 .cal_ui {
+	display: none;
+}
+
+/*  不要
+div.cal_wrapper table.cal tr th div.cal_ui input {
+	border: solid 1px #CCC;
+	background-color: #FFF;
+	font-size: 12px;
+	margin: 0px 1px;
+	padding: 1px 5px;
+	border-radius: 3px;
+}
+-----------------------------------------------------------------*/
+div.cal_wrapper table.cal tr td {
+	font-size: 13px;
+	text-align: center;
+	padding: 1px;
+}
+
+div.cal_wrapper table.cal tr.headline {
+	background-color: #c0c0c0;
+	margin: 0 0 10px;
+}
+
+div.cal_wrapper table.cal tr.headline td {
+	padding: 1px 0;
+	color: #333;
+	font-size: 12px;
+}
+
+div.cal_wrapper table.cal tr.headline td:nth-of-type(1) {
+	color: #f4442e;
+}
+
+div.cal_wrapper table.cal tr.headline td:nth-of-type(7) {
+	color: #1d54a6;
+}
+
+div.cal_wrapper table.cal tr td div {
+	position: relative;
+	padding: 0 1px;
+	font-size: 12px;
+	text-align: center;
+	background-color: transparent;
+}
+
+div.cal_wrapper table.cal tr td div span {
+	display: none;
+	visibility: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 180px;
+	border: solid 1px #eee;
+	background-color: fff;
+	text-align: left;
+	padding: 5px;
+	z-index: 10;
+	color: #000;
+	font-weight: normal;
+	line-height: 1.5em;
+	box-shadow: 1px 1px 3px #666;
+}
+
+div.cal_wrapper table.cal tr td div.Sat {
+	color: #1d54a6;
+	background-color: #cecece;
+}
+
+div.cal_wrapper table.cal tr td div.Sun {
+	color: #f4442e;
+	background-color: #cecece;
+}
+
+div.cal_wrapper table.cal tr td div.Today {
+	font-weight: bold;
+}
+
+div.cal_wrapper table.cal tr td div.Deli {
+	background-color: transparent;
+}
+
+div.cal_wrapper table.cal tr td div.Holyday {
+	color: #f4442e;
+	background-color: #cecece;
+}
+
+div.cal_wrapper table.cal tr td div.backward {
+	color: #CCC;
+	font-weight: normal;
+	background-color: transparent;
+	border-radius: 3px;
+}
+
+.footerContent_cal p.note {
+	font-size: 13px;
+}
+
+.footerContent_cal p.note span {
+	color: #cecece;
+}

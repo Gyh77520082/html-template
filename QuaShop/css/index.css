@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg_right a:hover {
+	opacity: 0.85;
+}
+
+#header{
+	margin:0 auto;
+}

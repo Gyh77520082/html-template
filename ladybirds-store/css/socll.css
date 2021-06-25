@@ -1,0 +1,93 @@
+.ttl {
+				width: 144px;
+				height: 18px;
+				background-color: #EAEAEA;
+				color: #333333;
+				font-weight: bold;
+				font-size: 12px;
+				padding: 3px;
+				line-height: 150%;
+				text-align: center;
+			}
+
+			.prc {
+				width: 296px;
+				height: 38px;
+				background-color: #FFF;
+				color: #333;
+				font-size: 14px;
+				font-family: "僸儔僊僲妏僑 Pro W3", "Hiragino Kaku Gothic Pro", "儊僀儕僆", Meiryo, Osaka, "俵俽 俹僑僔僢僋", "MS PGothic", sans-serif;
+				padding: 2px;
+				text-align: left;
+				font-weight: normal;
+			}
+
+			.icn {
+				background-color: #FF6699;
+				/*border-radius:5px;*/
+				position: relative;
+				width: 50px;
+				margin: 0 0 2px;
+				padding: 0px;
+				color: #FFF;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: bold;
+				text-align: center;
+				height: 16px;
+			}
+
+			.icn:after {
+				border: 5px solid transparent;
+				border-top-color: #FF6699;
+				border-bottom-width: 0;
+				bottom: -5px;
+				content: "";
+				display: block;
+				left: 10px;
+				position: absolute;
+				width: 0;
+			}
+
+			.free {
+				font-size: 10px;
+				font-weight: bold;
+				margin: 0 0 0 4px;
+				padding: 1px 2px 0 2px;
+				border-radius: 2px 2px 2px 2px;
+				background: #EA2697;
+				color: #FFF;
+			}
+
+			.yen {
+				font-size: 10px;
+			}
+
+			#carousel ul li img {
+				width: 288px;
+			}
+
+			@media screen and (max-width: 769px) {
+				#carousel {
+					width: 100%;
+					height: 120px;
+				}
+
+				#carousel ul li {
+					width: 120px;
+				}
+
+				#carousel ul li img {
+					width: 100%;
+				}
+
+				#carousel_prev {
+					left: 0;
+					top: 20px;
+				}
+
+				#carousel_next {
+					right: 0;
+					top: 20px;
+				}
+			}
